@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+
+  <title>IEC</title>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="./assets/logoStd.png" width="100px">
+    <nav>
+      <ul class="nav_link ">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./iec.php">Listagem</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="cta"><button>Botão</button></a>
+  </header>
+
+  <main>
+
+    <button type="button" class="collapsible">Instruções <span>&#8595;</span> </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias debitis maiores voluptate assumenda. Repellat officia ex labore ut dolorem corporis culpa error eligendi, numquam voluptates ea earum voluptatum iure!</p>
+    </div>
+
+    <h3>Upload de arquivos</h3>
+    <div class="drop-files">
+      <div class="drop-area" id="xmlCard">
+        <h4 class="drag-text">XML</h4>
+        <div class="dashed-area" id="xmlArea"> 
+          <span class="drag-text"> Arraste e solte o arquivo <strong>".xml" </strong> </span>
+          <span class="drag-text"> ou então  </span>
+          <span class="drag-button"> escolha o arquivo</span>
+          <span class="drag-support "> Arquivos aceitos: .xml</span>
+        </div>
+       
+      </div>
+
+      <div class="drop-area" id="csvCard">
+        <h4 class="drag-text">CSV</h4>
+        <div class="dashed-area" id="csvArea">
+          <span class="drag-text"> Arraste e solte o arquivo <strong>".csv" </strong> </span>
+          <span class="drag-text"> ou então  </span>
+          <span class="drag-button"> escolha o arquivo</span>
+          <span class="drag-support"> Arquivos aceitos: .csv</span>
+        </div>
+        
+      </div>
+    </div>
+
+    </div>
+    <div class="tables">
+        
+      <table class="added xmlAdd">
+
+      </table>
+
+      <table class="added csvAdd">
+
+      </table>
+  
+    </div>
+    
+
+
+
+
+
+  </main>
+
+  <footer>
+
+    <div class="footer_body">
+      <h3>Treetech</h3>
+      <p>
+        Rua José Alvim, 112 | Atibaia–SP | 12940–750
+      </p>
+      <p>
+        Copyright © 2000 by Treetech
+      </p>
+    </div>
+
+
+  </footer>
+</body>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    content.classList.toggle("active_content");
+  });
+}
+
+</script>
+<script src="./script.js"></script>
+
+</html>
