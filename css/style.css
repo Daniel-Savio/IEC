@@ -7,6 +7,20 @@
     color: black;
     font-family: "Montserrat", sans-serif;
 }
+.btn{
+    padding: 9px 25px;
+    background-color: rgba(0, 130, 66, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+    width: fit-content;
+}
+.btn:hover{
+    background-color: rgba(0, 130, 66, 0.8);
+}
+
 header li, a{
     
     font-weight: 600;
@@ -114,6 +128,13 @@ main h3{
     color: #008242;
     text-align: center;
 }
+#upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
+}
 
 /* Drag adn drop */
 .drop-files{
@@ -178,7 +199,9 @@ main h3{
     border-color: #008242;
 
 }
-
+.upload_btn{
+    margin: 0 auto;
+}
 /* Rodapé do site */
 footer{
     background: #008242;
