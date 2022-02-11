@@ -48,7 +48,6 @@ xmlArea.addEventListener("drop", (evt)=>{
             console.log(filesXML[i]);
             return;
         }
-
     }
 
     xmlArea.classList.remove("drag-area-active");
@@ -80,13 +79,17 @@ csvArea.addEventListener("drop", (evt)=>{
 }, false);
 
 function sendData( csv, xml ) {
-    const XHR = new XMLHttpRequest(),
-          FD  = new FormData(document.querySelector("form"));
-  
+    const XHR = new XMLHttpRequest()
+    const FD  = new FormData(document.querySelector("form"));
+
+    const blobXML = new Blob([xml], { type: "text/xml",
+                                      name: ".xml"});
+    const blobCSV = new Blob([csv], { type: "application/vnd.ms-excel",
+                                      name: ".csv"});
+
     // Push our data into our FormData object
-    FD.append( "xml", xml );
-    
-    FD.append( "csv",  csv);
+    FD.append( "xml", xml )
+      //.append( "csv",  blobCSV);
      
     // Define what happens on successful data submission
     XHR.addEventListener( 'load', function( event ) {
@@ -97,10 +100,8 @@ function sendData( csv, xml ) {
     XHR.addEventListener(' error', function( event ) {
       alert( 'Oops! Something went wrong.' );
     } );
-  
     // Set up our request
     XHR.open( 'POST', 'http://localhost/IEC/bdd.php' );
-  
     // Send our FormData object; HTTP headers are set automatically
     XHR.send( FD );
   }
@@ -109,7 +110,7 @@ function sendData( csv, xml ) {
 
 submit.addEventListener("click",(evt)=>{
     evt.preventDefault();
-    sendData(filesCSV, filesXML)
+    sendData(filesCSV[0], filesXML[0])
     
    
    
