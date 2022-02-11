@@ -57,6 +57,13 @@ header button:hover{
 
 /* corpo */
 
+main{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
 /* collapse */
 
 .collapsible {
@@ -73,9 +80,6 @@ header button:hover{
     z-index: 10;
   }
 
-.collapsible span{
-   
-}
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
     background-color: #ddd;
@@ -96,8 +100,8 @@ header button:hover{
     
   }
   .active_content{
-      transform: translateY(0%);
-      
+    transform: translateY(0%);
+    position: sticky;
   }
 
 .content p{
@@ -105,6 +109,75 @@ header button:hover{
     color: rgb(114, 114, 114);
 }
 
+main h3{
+    padding:  0.5% 3%;
+    color: #008242;
+    text-align: center;
+}
+
+/* Drag adn drop */
+.drop-files{
+    margin: 10px auto;
+    /* background: #eee; */
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    padding:  0.3% 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.drop-area{
+   
+    border-radius: 30px;
+    padding: 4%;
+    box-shadow: 0px 10px 15px #b3b1b1;
+    background: rgb(244, 255, 244);
+  
+
+}
+.dashed-area{
+    padding: 10%;
+    border: dashed;
+    border-radius: 25px;
+    border-color: #dce7fa;
+    border-width: .15rem;
+    margin-top: .3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+   
+
+}
+
+.drag-button{
+    padding: .5%;
+    color: rgba(0, 130, 66, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.drag-button:hover{
+   color: rgba(0, 130, 66, 0.6);
+
+}
+
+.drag-support {
+    font-size: 14px;
+}
+
+.drag-area-active{
+    color:rgba(0, 0, 0, 0.096);
+    padding: 10%;
+    border: solid;
+    border-color: #008242;
+
+}
 
 /* Rodapé do site */
 footer{
