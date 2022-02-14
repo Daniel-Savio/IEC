@@ -208,11 +208,25 @@ main h3{
     padding-bottom: auto;
     width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
-.addedFiles thead{
-    background: #008242;
-    font-weight: bold;
-    color: #dce7fa;
+
+.addedFiles .file{
+   
+    width: 50%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.file span{
+    margin: 5px auto;
+    border-radius: 20px;
+    background: #eee;
+    padding: 2% 5%;
+    font-size: 14px;
+    width: 100%;
+    
 }
 
 /* Rodapé do site */
@@ -222,9 +236,9 @@ footer{
     justify-content:center;
     align-items: center;
     text-align: center;
-    position:fixed;
     bottom:0;
     width: 100%;
+    
    
 }
 footer p, h3{

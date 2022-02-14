@@ -1,7 +1,11 @@
 const csvArea = document.querySelector("#csvArea");
 const xmlArea = document.querySelector("#xmlArea");
-const validTypes = ['text/xml', 'application/vnd.ms-excel']
 const submit = document.querySelector(".upload_btn");
+const xmlAdded = document.querySelector("#xmlAdded");
+const csvAdded = document.querySelector("#csvAdded");
+
+const validTypes = ['text/xml', 'application/vnd.ms-excel']
+
 
 let filesXML=[];
 let filesCSV=[];
@@ -47,8 +51,8 @@ xmlArea.addEventListener("drop", (evt)=>{
         let type = file.type
         
         let span = document.createElement('span');
-        span.innerHTML = file.name;
-        xmlArea.appendChild(span);
+        span.innerHTML = i+1  + " - " + file.name;
+        xmlAdded.appendChild(span);
 
         if(type !== validTypes[0]){
             alert(file.name + " - Não é permitido nesse campo. Confira a extensão do arquivo e as permissões deste campo");
@@ -72,6 +76,11 @@ csvArea.addEventListener("drop", (evt)=>{
         let file = filesCSV[i];
         let type = file.type
         console.log(filesCSV[i]);
+
+        let span = document.createElement('span');
+        span.innerText = i+1  + " - " + file.name;
+        csvAdded.appendChild(span);
+        
 
         if(type !== validTypes[1]){
             alert(file.name + " - Não é permitido nesse campo. Confira a extensão do arquivo e as permissões deste campo");
@@ -108,10 +117,11 @@ function sendXML( xml )
       alert( 'Oops! Something went wrong.' );
     });
     // Set up our request
-    XHR.open( 'POST', 'http://localhost/IEC/bdd.php' );
+    XHR.open( 'POST', 'http://localhost/IEC/api/bdd.php' );
     // Send our FormData object; HTTP headers are set automatically
     XHR.send( FD );
 }
+
 function sendCSV( csv ) 
 {
 const XHR = new XMLHttpRequest()
@@ -131,12 +141,13 @@ XHR.addEventListener(' error', function( event ) {
 });
 
 // Set up our request
-XHR.open( 'POST', 'http://localhost/IEC/bdd.php' );
+XHR.open( 'POST', 'http://localhost/IEC/api/bdd.php' );
 
 // Send our FormData object; HTTP headers are set automatically
 XHR.send( FD );
 }
   
+
 submit.addEventListener("click",(evt)=>{
     evt.preventDefault();
     console.log('click')
@@ -148,14 +159,19 @@ submit.addEventListener("click",(evt)=>{
         for (let i = 0; i < filesXML.length; i++) {
             let file = filesXML[i];
             sendXML(file);
+           
+            
         }
+        document.location.reload(true);
     }
 
     if(filesCSV.length){
         for (let i = 0; i < filesCSV.length; i++) {
             let file = filesCSV[i];
             sendXML(file);
+        
         }
+        document.location.reload(true);
     }
     
     

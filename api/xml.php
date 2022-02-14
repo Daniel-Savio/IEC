@@ -7,7 +7,7 @@
 
 */
 
-class XML{
+class XML extends Conn{
 
     private $url;
     private $xml;
