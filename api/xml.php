@@ -6,7 +6,7 @@
 * @version    1.0
 
 */
-
+include ("Conn.php");
 class XML extends Conn{
 
     private $url;

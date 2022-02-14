@@ -51,7 +51,7 @@ xmlArea.addEventListener("drop", (evt)=>{
         let type = file.type
         
         let span = document.createElement('span');
-        span.innerHTML = i+1  + " - " + file.name;
+        span.innerHTML = file.name;
         xmlAdded.appendChild(span);
 
         if(type !== validTypes[0]){
@@ -78,7 +78,7 @@ csvArea.addEventListener("drop", (evt)=>{
         console.log(filesCSV[i]);
 
         let span = document.createElement('span');
-        span.innerText = i+1  + " - " + file.name;
+        span.innerText = file.name;
         csvAdded.appendChild(span);
         
 
@@ -101,12 +101,9 @@ function sendXML( xml )
     const XHR = new XMLHttpRequest()
     const FD  = new FormData(document.querySelector("form"));
 
-
     // Push our data into our FormData object
-       
     FD.append( "xml", xml)
     
-     
     // Define what happens on successful data submission
     XHR.addEventListener( 'load', function( event ) {
       alert( 'Yeah! Data sent and response loaded.' );
@@ -159,19 +156,18 @@ submit.addEventListener("click",(evt)=>{
         for (let i = 0; i < filesXML.length; i++) {
             let file = filesXML[i];
             sendXML(file);
-           
-            
         }
         document.location.reload(true);
+        alert( 'Yeah! Data sent and response loaded.' );
     }
 
     if(filesCSV.length){
         for (let i = 0; i < filesCSV.length; i++) {
             let file = filesCSV[i];
-            sendXML(file);
-        
+            sendCSV(file);
         }
         document.location.reload(true);
+        alert( 'Yeah! Data sent and response loaded.' );
     }
     
     
