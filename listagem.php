@@ -1,5 +1,5 @@
-<?php 
-include ("./api/Files.php");
+<?php
+include("./api/Files.php");
 $file = new Files();
 
 ?>
@@ -14,9 +14,10 @@ $file = new Files();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/listagem.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/listagem.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 
 
@@ -33,7 +34,7 @@ $file = new Files();
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./iec.php">Listagem</a>
+                    <a href="./listagem.php">Listagem</a>
                 </li>
             </ul>
         </nav>
@@ -42,14 +43,38 @@ $file = new Files();
 
 
     <main id="file-list">
-        <section class="asside">
-            <?php 
-                foreach ($file->fetchXml() as  $xml) {
-                    echo  "<span class='xml-item'>". $xml['xml_file_name']. "</span>";
-                }
+        <aside class="asside">
 
-            ?>
-        </section>
+
+            <div class="asside-body">
+                <h3>Lista de XML</h3>
+
+                <div class="span-list">
+                    <?php
+                    foreach ($file->fetchXml() as  $xml) {
+                        echo  
+                        "<span class='xml-item'>" . 
+                            $xml['xml_file_name'] . 
+                            "<strong> " . 
+                                $xml["created_at"] . 
+                            " </strong>" . 
+                            "<p style='display:none'> " 
+                                . $xml["id"] . 
+                            " </p>".
+                        "</span>";
+                    }
+
+                    ?>
+                </div>
+            </div>
+            
+            <div class="collapse-btn">
+                <span class="material-icons md-24" id="arrow">chevron_left</span>
+            </div>
+
+
+
+        </aside>
         <section class="visual">
             coisas aparecendo
         </section>
@@ -75,18 +100,6 @@ $file = new Files();
     </footer>
 </body>
 
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            content.classList.toggle("active_content");
-        });
-    }
-</script>
 <script src="./js/listagem.js"></script>
 
 </html>

@@ -4,22 +4,94 @@
 }
 
 .asside{
+    width: 20%;
+    height: 85%;
+    padding-left: 3%;
+    background: #eee;
+    position: absolute;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease 0s;
+    overflow-y: visible;
+    
+}
+.asside-body h3{
+    margin: 5% 0;
+    width: 90%;
+}
+.asside-body{
     display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 100%;
-    padding: 3%;
+    width: 90%;
+    transition: all 0.3s ease 0s;
 }
+.span-list{
+    height: 100%;
+    width: 100%;
+}
+.xml-item{
+    margin: 5% 2%;
+    border-bottom: solid;
+    border-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease 0s;
+}
+.xml-item:hover{
+    border-radius: 15px;
+    border: solid;
+    border-color: #008242;
+    padding: 2%;
+    cursor: pointer;
+}
+.active-item{
+    border-radius: 15px;
+    border: solid;
+    border-color: #008242;
+    padding: 2%;
+    cursor: pointer;
+    background: #05ff8241;
+}
+
+
+.xml-item strong{
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+
+.asside .collapse-btn{
+    height: 100%;
+    width: 10%;
+    background: #ccc;
+    cursor: pointer;
+}
+.asside .material-icons{
+    margin: 1200% auto;
+    cursor: pointer;
+}
+
+.asside-closed{
+    transform: translateX(-92%);
+    overflow-y: hidden;
+    transition: all 0.3s ease 0s;
+
+
+}
+
 .visual{
+    margin-left: 20%;
     width: 80%;
     height: 100%;
     align-items: center;
     text-align: center;
     padding: 3%;
+    position: relative; 
+    transition: all 0.3s ease 0s;
 
 }
-.xml-item{
-    margin: 2%;
-    border-bottom: solid;
-    border-color: darkgray;
+.visual-full{
+    margin-left: 0;
+    width: 100%;
+    transition: all 0.3s ease 0s;
 }
