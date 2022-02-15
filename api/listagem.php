@@ -2,6 +2,5 @@
 include("Files.php");
 
 $File = new Files();
-
-echo $File->fetchXml();
+$File->fetchXml();
 //echo $File->fetchCsv();
