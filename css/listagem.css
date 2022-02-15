@@ -1,0 +1,25 @@
+#file-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.asside{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    padding: 3%;
+}
+.visual{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+
+}
+.xml-item{
+    margin: 2%;
+    border-bottom: solid;
+    border-color: darkgray;
+}

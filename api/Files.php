@@ -33,15 +33,11 @@ class Files extends Conn{
                 "created_at" => $fetch['created_at'],
                 "xml_file_name" => $fetch['xml_file_name'],
                 "xml_file_path" => $fetch['xml_file_path'],
-                "csv_id" => $fetch['csv_id'],
+                "csv_id" => $fetch['csv_id']
             ];
             $i++;
         }
-
-        header("Access-Control-Allow-Origin: *");
-        header("Content-Type: application/json");
-        http_response_code(200);
-        echo json_encode($xmlJson);
+        return $xmlJson;
 
     }
     public function setCsv($name, $path)
@@ -77,10 +73,7 @@ class Files extends Conn{
             $i++;
         }
 
-        header("Access-Control-Allow-Origin: *");
-        header("Content-Type: application/json");
-        http_response_code(200);
-        echo json_encode($csvJson);
+        return $csvJson;
     }
 
 }

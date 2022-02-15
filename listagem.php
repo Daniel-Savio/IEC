@@ -1,3 +1,11 @@
+<?php 
+include ("./api/Files.php");
+$file = new Files();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +16,7 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/listagem.css">
 
 
 
@@ -30,6 +39,25 @@
         </nav>
         <a href="#" class="cta"><button>Botão</button></a>
     </header>
+
+
+    <main id="file-list">
+        <section class="asside">
+            <?php 
+                foreach ($file->fetchXml() as  $xml) {
+                    echo  "<span class='xml-item'>". $xml['xml_file_name']. "</span>";
+                }
+
+            ?>
+        </section>
+        <section class="visual">
+            coisas aparecendo
+        </section>
+
+    </main>
+
+
+
 
     <footer>
 
@@ -59,6 +87,6 @@
         });
     }
 </script>
-<script src="./js/script.js"></script>
+<script src="./js/listagem.js"></script>
 
 </html>
