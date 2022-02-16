@@ -52,11 +52,9 @@ body{
 }
 .active-item{
     border-radius: 15px;
-    border: solid;
-    border-color: #008242;
     padding: 2%;
     cursor: pointer;
-    background: #05ff8241;
+    background: #05ff8213;
 }
 
 
@@ -118,6 +116,19 @@ body{
     color:aliceblue; 
     background-color: #008242;
     padding: 0 .2rem;
+    width: fit-content;
+    width: auto;
+    height: auto;
+}
+.xml-table th div{
+  resize: horizontal;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  display:block;
+  width: auto;
+  height: auto;
 }
 .xml-table .table-name{
     background-color: #ccc;

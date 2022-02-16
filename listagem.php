@@ -92,16 +92,16 @@ $file = new Files();
                         </tr>
                         <tr>
                             <th class='table-ln'>
-                                LN
+                                <div>LN</div>   
                             </th>
                             <th>
-                                Inst
+                                <div>Inst</div> 
                             </th>
                             <th>
-                                Name
+                                <div>DataName</div> 
                             </th>
                             <th class='table-desc'>
-                                Descrição
+                                <div>Descrição</div> 
                             </th>
                         </tr>
                     </thead>";
@@ -119,8 +119,6 @@ $file = new Files();
 
 
     </main>
-
-
 
     <!-- <footer>
 
