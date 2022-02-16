@@ -6,28 +6,8 @@
 * @version    1.0
 
 */
-include ("Conn.php");
-class XML extends Conn{
+class XML{
 
-    private $url;
-    private $xml;
-
-    /**
-     * Cria um objeto do tipo XML para manipular
-     * @param string O caminho da url do arquivo .xml que se deseja pegar os valores
-     *
-     */
-    public function __construct($url) {
-        $this->url = $url;
-
-        try 
-        {
-            $this->xml = simplexml_load_file($this->url);
-           
-        } catch (Exception $e) {
-            echo "Erro no xml";
-        }
-    }
 
 /**
  *
@@ -35,10 +15,11 @@ class XML extends Conn{
  * @return   array retorna todos os dados DOI->DAI->Val do xml covertido em array junto com os atributos inst, lnClass e name.
  *
  */
-    public function getData()
+    public function getData($url)
     {
+        $xml = simplexml_load_file($url);
         $data = [];
-        $class = $this->xml->{'IED'}->{'AccessPoint'}->{'Server'}->{'LDevice'};
+        $class = $xml->{'IED'}->{'AccessPoint'}->{'Server'}->{'LDevice'};
         $row=0;
         foreach($class as $class){
             $class1 = $class->{'LN'};

@@ -1,6 +1,8 @@
 <?php
+include("./api/xml.php");
 include("./api/Files.php");
 $file = new Files();
+
 
 ?>
 
@@ -16,8 +18,10 @@ $file = new Files();
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/listagem.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+   
 
 
 
@@ -65,6 +69,7 @@ $file = new Files();
                     }
 
                     ?>
+                    <div class="btn" id="visualizar"> To eletronorte ></div>
                 </div>
             </div>
             
@@ -72,19 +77,52 @@ $file = new Files();
                 <span class="material-icons md-24" id="arrow">chevron_left</span>
             </div>
 
-
-
         </aside>
+
         <section class="visual">
-            coisas aparecendo
+            <?php
+                foreach ($file->fetchXml() as  $data) {
+                    $xml = new XML($data['xml_file_path']);
+                    $xmlContent = $xml->getData($data['xml_file_path']);
+                    echo "
+                    <table class='xml-table' id='{$data['xml_file_name']}'>
+                    <thead>
+                        <tr>
+                            <th class='table-name'>{$data['xml_file_name']}</th>
+                        </tr>
+                        <tr>
+                            <th class='table-ln'>
+                                LN
+                            </th>
+                            <th>
+                                Inst
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th class='table-desc'>
+                                Descrição
+                            </th>
+                        </tr>
+                    </thead>";
+                    foreach ($xmlContent as $data) {
+                        echo "<tr class='row'>";
+                        foreach ($data as $col) {
+                            echo "<td>" . $col . "</td>";
+                        }
+                        echo "</tr>";
+                    }
+                }
+            ?>
+                
         </section>
+
 
     </main>
 
 
 
-
-    <footer>
+    <!-- <footer>
 
         <div class="footer_body">
             <h3>Treetech</h3>
@@ -97,9 +135,12 @@ $file = new Files();
         </div>
 
 
-    </footer>
+    </footer> -->
 </body>
 
 <script src="./js/listagem.js"></script>
+<script src="./js/geral.js"></script>
+<script>
 
+</script>
 </html>

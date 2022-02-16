@@ -9,7 +9,7 @@ if (isset($_FILES["xml"]) ){
 
     $novoNome  = $_FILES['xml']['name'];
     $diretorio = '../ext/';
-    $path = '../ext/'.$novoNome;
+    $path = './ext/'.$novoNome;
     
     $File = new Files();
     $File->setXml($novoNome, $path);
@@ -28,7 +28,7 @@ if (isset($_FILES["csv"]) ){
 
     $novoNome  = $_FILES['csv']['name'];
     $diretorio = '../ext/';
-    $path = '../ext/'.$novoNome;
+    $path = './ext/'.$novoNome;
 
     move_uploaded_file($_FILES['csv']['tmp_name'], $diretorio . $novoNome); //salva no diretorio ext/
     $File->setCsv($novoNome, $path);

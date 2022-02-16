@@ -4,7 +4,6 @@ const aside = document.querySelector(".asside");
 const visual = document.querySelector(".visual");
 const spans = document.querySelectorAll(".xml-item");
 
-let idArray = [];
 
 //Collapse
 btn.addEventListener('click', function(){
@@ -22,19 +21,20 @@ for (let i = 0; i < spans.length; i++) {
     spans[i].addEventListener("click", function() {
     this.classList.toggle("active-item");
     if(this.classList.contains("active-item")){
-        let id = this.querySelector("p").innerHTML;
-        idArray.push(id);
-       
+        let fullName = this.innerText;
+        let pos = fullName.indexOf(".")+4
+        let name = fullName.substring(0,pos);
+        let table = document.getElementById(name);
+        table.classList.add("hidden-table")
+          
     }else{
-        let id = this.querySelector("p").innerHTML;
-        console.log(id)
-        for(let j = 0; j <idArray.length; j++){
-            if(idArray[j] === id){
-                idArray.splice(j, 1)
-            }
-        }
+        let fullName = this.innerText;
+        let pos = fullName.indexOf(".")+4
+        let name = fullName.substring(0,pos);
+        let table = document.getElementById(name);
+        table.classList.remove("hidden-table")
+        
     }
-    console.log(idArray);
     
   });
 }
