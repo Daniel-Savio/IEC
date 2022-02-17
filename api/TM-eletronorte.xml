@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL/ SCL.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL/ SCL.xsd">
 	<Header toolID="Treetech ICD Configurator" revision="1.0" version="Release GE - Projeto Chimarrão" id="ICD File">
 		<History>
-			<Hitem what="TM, DM1, COMM, TS e AVR" when="20/09/2021" revision="1.00" why="ICD GE - Projeto Chimarrão" version="Release GE - Projeto Chimarrão" who="Hugo Wemer" />
+			<Hitem what="TM, DM1, COMM, TS e AVR" when="20/09/2021" revision="1.00" why="ICD GE - Projeto Chimarrão" version="Release GE - Projeto Chimarrão" who="Hugo Wemer"/>
 		</History>
 	</Header>
 	<Communication>
@@ -106,77 +106,77 @@
 						</ReportControl>
 						<DOI name="StErrRly">
 							<DAI name="d">
-								<Val>Self-Diagnostic Relay Status</Val>
+								<Val>HR23B7 - Self-Diagnostic Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CommErr">
 							<DAI name="d">
-								<Val>Communication error between TM1 and TM2</Val>
+								<Val>HR1022B0 - Communication error between TM1 and TM2</Val>
 							</DAI>
 						</DOI>
 						<DOI name="SupCfgErr">
 							<DAI name="d">
-								<Val>Incorrect programming of SUP parameter</Val>
+								<Val>HR1022B1 - Incorrect programming of SUP parameter</Val>
 							</DAI>
 						</DOI>
 						<DOI name="EEPROMErr">
 							<DAI name="d">
-								<Val>EEPROM memory failure</Val>
+								<Val>HR1022B2 - EEPROM memory failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="OvMeaErr">
 							<DAI name="d">
-								<Val>Measurements overflow</Val>
+								<Val>HR1022B3 - Measurements overflow</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDDiffErr">
 							<DAI name="d">
-								<Val>Oil temperature measurement failure</Val>
+								<Val>HR1022B4 - Oil temperature measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IntConvErr">
 							<DAI name="d">
-								<Val>AD Converter failure</Val>
+								<Val>HR1022B5 - AD Converter failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr1">
 							<DAI name="d">
-								<Val>Load current 1 measurement failure</Val>
+								<Val>HR1022B6 - Load current 1 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr2">
 							<DAI name="d">
-								<Val>Load current 2 measurement failure</Val>
+								<Val>HR1022B7 - Load current 2 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr1">
 							<DAI name="d">
-								<Val>Sensor A temperature measurement failure (term. 1)</Val>
+								<Val>HR1022B8 - Sensor A temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr1">
 							<DAI name="d">
-								<Val>Sensor B temperature measurement failure (term. 1)</Val>
+								<Val>HR1022B9 - Sensor B temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr2">
 							<DAI name="d">
-								<Val>Sensor A temperature measurement failure (term. 2)</Val>
+								<Val>HR1022B10 - Sensor A temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr2">
 							<DAI name="d">
-								<Val>Sensor B temperature measurement failure (term. 2)</Val>
+								<Val>HR1022B11 - Sensor B temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr1">
 							<DAI name="d">
-								<Val>Sensor A temp. measurement failure - sudden change</Val>
+								<Val>HR1023B4 - Sensor A temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2DiagErr1">
 							<DAI name="d">
-								<Val>Sensor B temp. measurement failure - sudden change</Val>
+								<Val>HR1029B4 - Sensor B temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr2">
@@ -221,22 +221,22 @@
 						</ReportControl>
 						<DOI name="StErrRly">
 							<DAI name="d">
-								<Val>Self-Diagnostic Relay Status</Val>
+								<Val>HR41B7 - Self-Diagnostic Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CommErr">
 							<DAI name="d">
-								<Val>Communication error between TM1 and TM2</Val>
+								<Val>HR1502B0 - Communication error between TM1 and TM2</Val>
 							</DAI>
 						</DOI>
 						<DOI name="EEPROMErr">
 							<DAI name="d">
-								<Val>EEPROM memory failure</Val>
+								<Val>HR1502B2 - EEPROM memory failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="OvMeaErr">
 							<DAI name="d">
-								<Val>Measurements overflow</Val>
+								<Val>HR1502B3 - Measurements overflow</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDDiffErr">
@@ -246,47 +246,47 @@
 						</DOI>
 						<DOI name="IntConvErr">
 							<DAI name="d">
-								<Val>AD Converter failure</Val>
+								<Val>HR1502B5 - AD Converter Failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr1">
 							<DAI name="d">
-								<Val>Load current 1 measurement failure</Val>
+								<Val>HR1502B6 - Load current 1 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr2">
 							<DAI name="d">
-								<Val>Load current 2 measurement failure</Val>
+								<Val>HR1502B7 - Load current 2 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr1">
 							<DAI name="d">
-								<Val>Sensor A temperature measurement failure (term. 1)</Val>
+								<Val>HR1502B8 - Sensor A temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr1">
 							<DAI name="d">
-								<Val>Sensor B temperature measurement failure (term. 1)</Val>
+								<Val>HR1502B9 - Sensor B temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr2">
 							<DAI name="d">
-								<Val>Sensor A temperature measurement failure (term. 2)</Val>
+								<Val>HR1502B10 - Sensor A temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr2">
 							<DAI name="d">
-								<Val>Sensor B temperature measurement failure (term. 2)</Val>
+								<Val>HR1502B11 - Sensor B temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr1">
 							<DAI name="d">
-								<Val>Sensor A temp. measurement failure - sudden change</Val>
+								<Val>HR1503B4 - Sensor A temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2DiagErr1">
 							<DAI name="d">
-								<Val>Sensor B temp. measurement failure - sudden change</Val>
+								<Val>HR1502B13 - Sensor B temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr2">
@@ -329,12 +329,12 @@
 						</ReportControl>
 						<DOI name="HPTmpAlm1">
 							<DAI name="d">
-								<Val>Winding 1 Alarm Relay Status</Val>
+								<Val>HR23B4 - Winding 1 Alarm Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpAlm2">
 							<DAI name="d">
-								<Val>Winding 2 Alarm Relay Status</Val>
+								<Val>HR41B0 - Winding 2 Alarm Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpAlm3">
@@ -569,10 +569,10 @@
 	<DataTypeTemplates>
 		<!--Está com dados do common data classes-->
 		<LNodeType id="LLN0_TYPE" lnClass="LLN0">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS" />
-			<DO name="Health" type="ENS3" />
-			<DO name="NamPlt" type="LPL_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS"/>
+			<DO name="Health" type="ENS3"/>
+			<DO name="NamPlt" type="LPL_0"/>
 		</LNodeType>
 		<!--Genérico com pontos mandatórios-->
 		<LNodeType id="LPHD_TYPE" lnClass="LPHD">
@@ -857,7 +857,7 @@
 		<!--DOTypes for common data classes-->
 		<DOType id="ING" cdc="ING">
 			<DA name="setVal" bType="INT32" fc="SP"/>
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="INS_1" cdc="INS">
 			<DA name="stVal" bType="Enum" type="HealthKind" fc="ST" dchg="true"/>
@@ -872,45 +872,45 @@
 			<!-- <DA name="d" bType="VisString255" fc="DC" /> -->
 		</DOType> 
 		<DOType id="INS" cdc="INS">
-			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="ENS2" cdc="INS">
-			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="ENS3" cdc="INS">
-			<DA name="stVal" bType="Enum" type="HealthKind" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="Enum" type="HealthKind" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="ENS4" cdc="INS">
-			<DA name="stVal" bType="INT32" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="INT32" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="ENS5" cdc="INS">
-			<DA name="stVal" bType="Enum" type="HealthKind" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="Enum" type="HealthKind" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="ENS6" cdc="INS">
-			<DA name="stVal" bType="Enum" type="ParallelTransfModeKind" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="stVal" bType="Enum" type="ParallelTransfModeKind" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="LPL_0" cdc="LPL">
-			<DA name="vendor" bType="VisString255" fc="DC" />
-			<DA name="swRev" bType="VisString255" fc="DC" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="vendor" bType="VisString255" fc="DC"/>
+			<DA name="swRev" bType="VisString255" fc="DC"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="INC_0" cdc="INC">
 			<DA name="stVal" bType="Enum" type="BehaviourModeKind" fc="ST" dchg="true"/>
@@ -927,12 +927,12 @@
 			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="SPC" cdc="SPC">
-			<DA name="ctlModel" bType="Enum" type="CtlModelKind" fc="CF" />
-			<DA name="Oper" bType="Struct" type="OperBool" fc="CO" />
-			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="ctlModel" bType="Enum" type="CtlModelKind" fc="CF"/>
+			<DA name="Oper" bType="Struct" type="OperBool" fc="CO"/>
+			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 			<!-- <DA name="origin" bType="Struct" type="Originator" fc="CO"/> -->
 		</DOType>
 		<DOType id="SPS" cdc="SPS">
@@ -943,20 +943,20 @@
 		</DOType>
         <!--DA Types-->
 		<DAType id="OperBool">
-			<BDA name="ctlVal" bType="BOOLEAN" />
-			<BDA name="ctlNum" bType="INT8U" />
-			<BDA name="T" bType="Timestamp" />
-			<BDA name="Test" bType="BOOLEAN" />
-			<BDA name="Check" bType="Enum" type="Check" />
-			<BDA name="origin" bType="Struct" type="Originator" />
+			<BDA name="ctlVal" bType="BOOLEAN"/>
+			<BDA name="ctlNum" bType="INT8U"/>
+			<BDA name="T" bType="Timestamp"/>
+			<BDA name="Test" bType="BOOLEAN"/>
+			<BDA name="Check" bType="Enum" type="Check"/>
+			<BDA name="origin" bType="Struct" type="Originator"/>
 		</DAType>
 		<DAType id="OperTcmd">
-			<BDA name="ctlVal" bType="Tcmd" type="Tcmd" />
-			<BDA name="origin" bType="Struct" type="Originator" />
-			<BDA name="ctlNum" bType="INT8U" />
-			<BDA name="T" bType="Timestamp" />
-			<BDA name="Test" bType="BOOLEAN" />
-			<BDA name="Check" bType="Enum" type="Check" />
+			<BDA name="ctlVal" bType="Tcmd" type="Tcmd"/>
+			<BDA name="origin" bType="Struct" type="Originator"/>
+			<BDA name="ctlNum" bType="INT8U"/>
+			<BDA name="T" bType="Timestamp"/>
+			<BDA name="Test" bType="BOOLEAN"/>
+			<BDA name="Check" bType="Enum" type="Check"/>
 		</DAType>
 		<DAType id="Originator">
 			<BDA name="orCat" bType="Enum" type="OriginatorCategoryKind"/>

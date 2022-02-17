@@ -92,6 +92,9 @@ $file = new Files();
                         </tr>
                         <tr>
                             <th class='table-ln'>
+                                <div>LDevice</div>   
+                            </th>
+                            <th class='table-ln'>
                                 <div>LN</div>   
                             </th>
                             <th>

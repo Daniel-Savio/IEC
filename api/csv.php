@@ -6,7 +6,7 @@
 
 */
 
-class CSV extends Conn{
+class CSV {
 
     private $url;
     private $csv;

@@ -233,7 +233,7 @@ footer{
     background: #008242;
     display: flex;
     justify-content:center;
-    position: absolute;
+    position: relative;
     align-items: center;
     text-align: center;
     bottom:0;
