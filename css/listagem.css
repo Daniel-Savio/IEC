@@ -103,6 +103,10 @@ body{
     width: 100%;
     transition: all 0.3s ease 0s;
 }
+.warning{
+    margin: auto auto;
+
+}
 .xml-table{
     width: 100%;
     display: none;

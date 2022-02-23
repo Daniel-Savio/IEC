@@ -18,10 +18,10 @@ $file = new Files();
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/listagem.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
 
@@ -45,6 +45,49 @@ $file = new Files();
         <a href="#" class="cta"><button>Botão</button></a>
     </header>
 
+    <div class="modal modal-active">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Converter XML para padrão Eletro-Norte</h3>
+                <span id="close" class="material-icons md-24">
+                    close
+                </span>
+            </div>
+
+            <form class="modal-body">
+                <div class="select-area">
+                    <div class="list-group">
+                    <div class="csv-list">
+                        <?php   
+                            $csvList = $file->fetchCsv();
+                            foreach ($csvList as $csv) {
+                                echo "<span class='csv-list-item'>{$csv['csv_file_name']}</span>";
+                            }
+                        ?>
+                    </div>
+                    <div class="xml-list">
+                    </div>
+                    
+                        <?php 
+                         foreach ($file->fetchXml() as  $xml) {
+                            echo
+                            "<span class='xml-list-item'>" .
+                                $xml['xml_file_name'] .
+                                "<p style='display:none'> "
+                                . $xml["id"] .
+                                " </p>" .
+                                "</span>";
+                        }
+                        ?>
+                    </div>
+                </div>
+
+                <button class="btn">Converter</button>
+            </form>
+
+        </div>
+    </div>
+
 
     <main id="file-list">
         <aside class="asside">
@@ -56,23 +99,23 @@ $file = new Files();
                 <div class="span-list">
                     <?php
                     foreach ($file->fetchXml() as  $xml) {
-                        echo  
-                        "<span class='xml-item'>" . 
-                            $xml['xml_file_name'] . 
-                            "<strong> " . 
-                                $xml["created_at"] . 
-                            " </strong>" . 
-                            "<p style='display:none'> " 
-                                . $xml["id"] . 
-                            " </p>".
-                        "</span>";
+                        echo
+                        "<span class='xml-item'>" .
+                            $xml['xml_file_name'] .
+                            "<strong> " .
+                            $xml["created_at"] .
+                            " </strong>" .
+                            "<p style='display:none'> "
+                            . $xml["id"] .
+                            " </p>" .
+                            "</span>";
                     }
 
                     ?>
                     <div class="btn" id="visualizar"> To eletronorte ></div>
                 </div>
             </div>
-            
+
             <div class="collapse-btn">
                 <span class="material-icons md-24" id="arrow">chevron_left</span>
             </div>
@@ -80,11 +123,16 @@ $file = new Files();
         </aside>
 
         <section class="visual">
+
+            <!-- <div class="warning">
+                <p>Nenhum arquivo selecionado para vizualização</p>
+            </div> -->
+
             <?php
-                foreach ($file->fetchXml() as  $data) {
-                    $xml = new XML($data['xml_file_path']);
-                    $xmlContent = $xml->getData($data['xml_file_path']);
-                    echo "
+            foreach ($file->fetchXml() as  $data) {
+                $xml = new XML($data['xml_file_path']);
+                $xmlContent = $xml->getData($data['xml_file_path']);
+                echo "
                     <table class='xml-table' id='{$data['xml_file_name']}'>
                     <thead>
                         <tr>
@@ -108,40 +156,28 @@ $file = new Files();
                             </th>
                         </tr>
                     </thead>";
-                    foreach ($xmlContent as $data) {
-                        echo "<tr class='row'>";
-                        foreach ($data as $col) {
-                            echo "<td>" . $col . "</td>";
-                        }
-                        echo "</tr>";
+                foreach ($xmlContent as $data) {
+                    echo "<tr class='row'>";
+                    foreach ($data as $col) {
+                        echo "<td>" . $col . "</td>";
                     }
+                    echo "</tr>";
                 }
+            }
             ?>
-                
+
         </section>
 
 
     </main>
 
-    <!-- <footer>
-
-        <div class="footer_body">
-            <h3>Treetech</h3>
-            <p>
-                Rua José Alvim, 112 | Atibaia–SP | 12940–750
-            </p>
-            <p>
-                Copyright © 2022 by Treetech
-            </p>
-        </div>
-
-
-    </footer> -->
 </body>
 
 <script src="./js/listagem.js"></script>
 <script src="./js/geral.js"></script>
+<script src="./js/toEletronorte.js"></script>
 <script>
 
 </script>
+
 </html>

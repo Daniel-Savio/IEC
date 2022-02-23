@@ -1,0 +1,89 @@
+
+.modal{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000000;
+    transition: all 0.3s ease 0s;
+}
+.modal-container{
+    margin: 10% auto;
+    width: 40%;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.modal-header{
+    width: 100%;
+    background-color: #008242;
+    color: aliceblue;
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    padding: 3%;
+    vertical-align: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.modal-header h3{
+    width: 100%;
+    margin-right: auto;
+    color: aliceblue;
+}
+#close{
+    cursor: pointer;
+    height: fit-content;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.select-area{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 3rem;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    vertical-align: top;
+    
+
+}
+.list-group{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.csv-list{
+    width: 50%;
+    height: fit-content;
+    
+}
+.xml-list{
+
+   
+}
+.select-area .csv-list-item{
+    display: block;
+    padding: 2%;
+   
+}
+.select-area .xml-list-item{
+    display: block;
+    padding: 2%;
+    
+}
+
+
+.modal-footer{
+
+}
