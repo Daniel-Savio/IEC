@@ -179,7 +179,7 @@ $file = new Files();
 
 <script src="./js/listagem.js"></script>
 <script src="./js/geral.js"></script>
-<script src="./js/toEletronorte.js"></script>
+<script src="./js/assideBtns.js"></script>
 <script>
 
 </script>
