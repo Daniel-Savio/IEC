@@ -129,7 +129,7 @@ FD.append( "csv", csv)
 
 // Define what happens on successful data submission
 XHR.addEventListener( 'load', function( event ) {
-    alert( 'Yeah! Data sent and response loaded.' );
+    //alert( 'Yeah! Data sent and response loaded.' );
 });
 
 // Define what happens in case of error

@@ -43,6 +43,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-width: fit-content;
 
 }
 .select-area{
@@ -62,25 +63,45 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    font-size: small;
+    width: 100%;
 }
 .csv-list{
+    min-width:fit-content;
+    background: #ddd;
+    padding: 3%;
+    margin-right: 1rem;
     width: 50%;
-    height: fit-content;
-    
+    border-radius: 3%;
+    overflow-y: auto;
 }
 .xml-list{
-
-   
+    min-width:fit-content;
+    width: 50%;
+    background: #ddd;
+    padding: 3%;
+    border-radius: 3%;
+    overflow-y: auto;
 }
 .select-area .csv-list-item{
     display: block;
     padding: 2%;
+    border-bottom: solid;
+    border-color: darkgray;
+    border-width: 2px;
    
 }
 .select-area .xml-list-item{
     display: block;
     padding: 2%;
+    border-bottom: solid;
+    border-color: darkgray;
+    border-width: 2px;
     
+}
+
+.list-group input[type='radio']{
+    accent-color: #008242;
 }
 
 

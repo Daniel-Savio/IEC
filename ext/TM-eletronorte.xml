@@ -111,7 +111,7 @@
 						</DOI>
 						<DOI name="CommErr">
 							<DAI name="d">
-								<Val>HR1022B0 - Communication error between TM1 and TM2</Val>
+								<Val>HR1502B0 - Communication error between TM1 and TM2</Val>
 							</DAI>
 						</DOI>
 						<DOI name="SupCfgErr">
@@ -121,12 +121,12 @@
 						</DOI>
 						<DOI name="EEPROMErr">
 							<DAI name="d">
-								<Val>HR1022B2 - EEPROM memory failure</Val>
+								<Val>HR1502B2 - EEPROM memory failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="OvMeaErr">
 							<DAI name="d">
-								<Val>HR1022B3 - Measurements overflow</Val>
+								<Val>HR1502B3 - Measurements overflow</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDDiffErr">
@@ -136,47 +136,47 @@
 						</DOI>
 						<DOI name="IntConvErr">
 							<DAI name="d">
-								<Val>HR1022B5 - AD Converter failure</Val>
+								<Val>HR1502B5 - AD Converter Failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr1">
 							<DAI name="d">
-								<Val>HR1022B6 - Load current 1 measurement failure</Val>
+								<Val>HR1502B6 - Load current 1 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr2">
 							<DAI name="d">
-								<Val>HR1022B7 - Load current 2 measurement failure</Val>
+								<Val>Load current 2 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr1">
 							<DAI name="d">
-								<Val>HR1022B8 - Sensor A temperature measurement failure (term. 1)</Val>
+								<Val>HR1502B8 - Sensor A temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr1">
 							<DAI name="d">
-								<Val>HR1022B9 - Sensor B temperature measurement failure (term. 1)</Val>
+								<Val>HR1502B9 - Sensor B temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr2">
 							<DAI name="d">
-								<Val>HR1022B10 - Sensor A temperature measurement failure (term. 2)</Val>
+								<Val>HR1502B10 - Sensor A temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr2">
 							<DAI name="d">
-								<Val>HR1022B11 - Sensor B temperature measurement failure (term. 2)</Val>
+								<Val>HR1502B11 - Sensor B temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr1">
 							<DAI name="d">
-								<Val>HR1023B4 - Sensor A temp. measurement failure - sudden change</Val>
+								<Val>HR1502B12 - Sensor A temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2DiagErr1">
 							<DAI name="d">
-								<Val>HR1029B4 - Sensor B temp. measurement failure - sudden change</Val>
+								<Val>HR1502B13 - Sensor B temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr2">
@@ -226,17 +226,17 @@
 						</DOI>
 						<DOI name="CommErr">
 							<DAI name="d">
-								<Val>HR1502B0 - Communication error between TM1 and TM2</Val>
+								<Val>Communication error between TM1 and TM2</Val>
 							</DAI>
 						</DOI>
 						<DOI name="EEPROMErr">
 							<DAI name="d">
-								<Val>HR1502B2 - EEPROM memory failure</Val>
+								<Val>EEPROM memory failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="OvMeaErr">
 							<DAI name="d">
-								<Val>HR1502B3 - Measurements overflow</Val>
+								<Val>Measurements overflow</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDDiffErr">
@@ -246,12 +246,12 @@
 						</DOI>
 						<DOI name="IntConvErr">
 							<DAI name="d">
-								<Val>HR1502B5 - AD Converter Failure</Val>
+								<Val>AD Converter failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr1">
 							<DAI name="d">
-								<Val>HR1502B6 - Load current 1 measurement failure</Val>
+								<Val>Load current 1 measurement failure</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpSenErr2">
@@ -261,32 +261,32 @@
 						</DOI>
 						<DOI name="RTD1MeaErr1">
 							<DAI name="d">
-								<Val>HR1502B8 - Sensor A temperature measurement failure (term. 1)</Val>
+								<Val>Sensor A temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr1">
 							<DAI name="d">
-								<Val>HR1502B9 - Sensor B temperature measurement failure (term. 1)</Val>
+								<Val>Sensor B temperature measurement failure (term. 1)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1MeaErr2">
 							<DAI name="d">
-								<Val>HR1502B10 - Sensor A temperature measurement failure (term. 2)</Val>
+								<Val>Sensor A temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2MeaErr2">
 							<DAI name="d">
-								<Val>HR1502B11 - Sensor B temperature measurement failure (term. 2)</Val>
+								<Val>Sensor B temperature measurement failure (term. 2)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr1">
 							<DAI name="d">
-								<Val>HR1503B4 - Sensor A temp. measurement failure - sudden change</Val>
+								<Val>Sensor A temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD2DiagErr1">
 							<DAI name="d">
-								<Val>HR1502B13 - Sensor B temp. measurement failure - sudden change</Val>
+								<Val>Sensor B temp. measurement failure - sudden change</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTD1DiagErr2">
@@ -339,22 +339,22 @@
 						</DOI>
 						<DOI name="HPTmpAlm3">
 							<DAI name="d">
-								<Val>Winding 3 Alarm Relay Status</Val>
+								<Val>HR41B4 - Winding 3 Alarm Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpTr1">
 							<DAI name="d">
-								<Val>Winding 1 Trip Relay Status</Val>
+								<Val>HR23B5 - Winding 1 Trip Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpTr2">
 							<DAI name="d">
-								<Val>Winding 2 Trip Relay Status</Val>
+								<Val>HR41B1 - Winding 2 Trip Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpTr3">
 							<DAI name="d">
-								<Val>Winding 3 Trip Relay Status</Val>
+								<Val>HR41B5 - Winding 3 Trip Relay Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpTrDet1">
@@ -364,7 +364,7 @@
 						</DOI>
 						<DOI name="HPTmpTrDet2">
 							<DAI name="d">
-								<Val>Winding 2 trip temperature achieved</Val>
+								<Val>HR1503B2 - Winding 2 trip temperature achieved</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpTrDet3">
@@ -374,17 +374,17 @@
 						</DOI>
 						<DOI name="HPTmpClc1">
 							<DAI name="d">
-								<Val>Current Value of Winding 1 Temperature</Val>
+								<Val>HR20 - Current Value of Winding 1 Temperature</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpClc2">
 							<DAI name="d">
-								<Val>Current Value of Winding 2 Temperature</Val>
+								<Val>HR42 - Current Value of Winding 2 Temperature</Val>
 							</DAI>
 						</DOI>
 						<DOI name="HPTmpClc3">
 							<DAI name="d">
-								<Val>Current Value of Winding 3 Temperature</Val>
+								<Val>HR43 - Current Value of Winding 3 Temperature</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -408,52 +408,52 @@
 						</ReportControl>
 						<DOI name="Amp1">
 							<DAI name="d">
-								<Val>Current Value of Winding 1 Measured Current</Val>
+								<Val>HR22 - Current Value of Winding 1 Measured Current</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp2">
 							<DAI name="d">
-								<Val>Current Value of Winding 2 Measured Current</Val>
+								<Val>HR48 - Current Value of Winding 2 Measured Current</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp3">
 							<DAI name="d">
-								<Val>Current Value of Winding 3 Measured Current</Val>
+								<Val>HR49 - Current Value of Winding 3 Measured Current</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct1">
 							<DAI name="d">
-								<Val>Current Winding 1 Load Percentage</Val>
+								<Val>HR24 - Current Winding 1 Load Percentage</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct2">
 							<DAI name="d">
-								<Val>Current Winding 2 Load Percentage</Val>
+								<Val>HR44 - Current Winding 2 Load Percentage</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct3">
 							<DAI name="d">
-								<Val>Current Winding 3 Load Percentage</Val>
+								<Val>HR45 - Current Winding 3 Load Percentage</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDTmp1">
 							<DAI name="d">
-								<Val>Current measurement of TM1 temperature sensor (RTD A)</Val>
+								<Val>HR56 - Current measurement of TM1 temperature sensor (RTD A)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDTmp2">
 							<DAI name="d">
-								<Val>Current measurement of TM1 temperature sensor (RTD B)</Val>
+								<Val>HR57 - Current measurement of TM1 temperature sensor (RTD B)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDTmp3">
 							<DAI name="d">
-								<Val>Current measurement of TM2 temperature sensor (RTD A)</Val>
+								<Val>HR1500 - Current measurement of TM2 temperature sensor (RTD A)</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDTmp4">
 							<DAI name="d">
-								<Val>Current measurement of TM2 temperature sensor (RTD B)</Val>
+								<Val>HR1501 - Current measurement of TM2 temperature sensor (RTD B)</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -468,7 +468,7 @@
 						</ReportControl>
 						<DOI name="CECtl">
 							<DAI name="d">
-								<Val>CG1 Mode (0 = Automatic/OFF, 1 = Manual/ON)</Val>
+								<Val>HR0B0 - Automatic / Manual Mode Group CG1</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -483,7 +483,7 @@
 						</ReportControl>
 						<DOI name="CECtl">
 							<DAI name="d">
-								<Val>CG2 Mode (0 = Automatic/OFF, 1 = Manual/ON)</Val>
+								<Val>HR0B1 - Automatic / Manual Mode Group CG2</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -498,7 +498,7 @@
 						</ReportControl>
 						<DOI name="CECtl">
 							<DAI name="d">
-								<Val>CG3 Mode (0 = Automatic/OFF, 1 = Manual/ON)</Val>
+								<Val>HR41B2 - CG3 Relay Status</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -513,7 +513,7 @@
 						</ReportControl>
 						<DOI name="CECtl">
 							<DAI name="d">
-								<Val>CG4 Mode (0 = Automatic/OFF, 1 = Manual/ON)</Val>
+								<Val>HR41B3 - CG4 Relay Status</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -538,7 +538,7 @@
 						</ReportControl>
 						<DOI name="TmpAlm">
 							<DAI name="d">
-								<Val>Oil Alarm Status</Val>
+								<Val>HR23B0 - Oil Alarm Status</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TmpTr">
@@ -558,7 +558,7 @@
 						</DOI>
 						<DOI name="Tmp">
 							<DAI name="d">
-								<Val>Current Value of Oil Temperature</Val>
+								<Val>HR19 - Current Value of Oil Temperature</Val>
 							</DAI>
 						</DOI>
 					</LN>

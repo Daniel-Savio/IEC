@@ -1,0 +1,62 @@
+LN;Inst;Data Name;Descrição IEC;Descrição final;Link
+CCGR;1;CECtl;Automatic / Manual Mode Group CG1;HR0B0 - Automatic / Manual Mode Group CG1;SDp_TM_$CCGR1$CO$CECtl$Oper$ctlVal
+CCGR;2;CECtl;Automatic / Manual Mode Group CG2;HR0B1 - Automatic / Manual Mode Group CG2;SDp_TM_$CCGR2$CO$CECtl$Oper$ctlVal
+CCGR;3;CECtl;Automatic / Manual Mode Group CG3;HR0B4 - Automatic / Manual Mode Group CG3;SDp_TM_$CCGR3$CO$CECtl$Oper$ctlVal
+CCGR;4;CECtl;Automatic / Manual Mode Group CG4;HR0B5 - Automatic / Manual Mode Group CG4;SDp_TM_$CCGR4$CO$CECtl$Oper$ctlVal
+SIML;1;Tmp;Current Value of Oil Temperature;HR19 - Current Value of Oil Temperature;SDp_TM_$SIML1$MX$Tmp$mag$f \ SDp_TM_$SIML1$MX$Tmp$mag$i \ SDp_TM_$SIML1$MX$Tmp$instMag$f \ SDp_TM_$SIML1$MX$Tmp$instMag$i
+SPTR;1;HPTmpClc1;Current Value of Winding 1 Temperature;HR20 - Current Value of Winding 1 Temperature;SDp_TM_$SPTR1$MX$HPTmpClc1$mag$f \ SDp_TM_$SPTR1$MX$HPTmpClc1$mag$i \ SDp_TM_$SPTR1$MX$HPTmpClc1$instMag$f \ SDp_TM_$SPTR1$MX$HPTmpClc1$instMag$i
+MMXN;1;Amp1;Current Value of Winding 1 Measured Current;HR22 - Current Value of Winding 1 Measured Current;SDp_TM_$MMXN1$MX$Amp1$mag$f \ SDp_TM_$MMXN1$MX$Amp1$mag$i \ SDp_TM_$MMXN1$MX$Amp1$instMag$f \ SDp_TM_$MMXN1$MX$Amp1$instMag$i
+SIML;1;TmpAlm;Oil Alarm Status;HR23B0 - Oil Alarm Status;SDp_TM_$SIML1$ST$TmpAlm$stVal
+SIML;1;Tm;Oil Trip Status;HR23B1 - Oil Trip Status;SDp_TM_$SIML1$ST$Tm$stVal
+SPTR;1;HPTmpAlm1;Winding 1 Alarm Relay Status;HR23B4 - Winding 1 Alarm Relay Status;SDp_TM_$SPTR1$ST$HPTmpAlm1$stVal
+SPTR;1;HPTmpTr1;Winding 1 Trip Relay Status;HR23B5 - Winding 1 Trip Relay Status;SDp_TM_$SPTR1$ST$HPTmpTr1$stVal
+LPHD;1;StErrRly;Self-Diagnostic Relay Status;HR23B7 - Self-Diagnostic Relay Status;SDp_TM_$LPHD1$ST$StErrRly$stVal
+MMXN;1;AmpPct1;Current Winding 1 Load Percentage;HR24 - Current Winding 1 Load Percentage;SDp_TM_$MMXN1$MX$AmpPct1$mag$f \ SDp_TM_$MMXN1$MX$AmpPct1$mag$i \ SDp_TM_$MMXN1$MX$AmpPct1$instMag$f \ SDp_TM_$MMXN1$MX$AmpPct1$instMag$i
+SPTR;1;HPTmpAlm2;Winding 2 Alarm Relay Status;HR41B0 - Winding 2 Alarm Relay Status;SDp_TM_$SPTR1$ST$HPTmpAlm2$stVal
+SPTR;1;HPTmpTr2;Winding 2 Trip Relay Status;HR41B1 - Winding 2 Trip Relay Status;SDp_TM_$SPTR1$ST$HPTmpTr2$stVal
+CCGR;3;CECtl;CG3 Relay Status;HR41B2 - CG3 Relay Status;SDp_TM_$CCGR3$ST$CECtl$stVal
+CCGR;4;CECtl;CG4 Relay Status;HR41B3 - CG4 Relay Status;SDp_TM_$CCGR4$ST$CECtl$stVal
+SPTR;1;HPTmpAlm3;Winding 3 Alarm Relay Status;HR41B4 - Winding 3 Alarm Relay Status;SDp_TM_$SPTR1$ST$HPTmpAlm3$stVal
+SPTR;1;HPTmpTr3;Winding 3 Trip Relay Status;HR41B5 - Winding 3 Trip Relay Status;SDp_TM_$SPTR1$ST$HPTmpTr3$stVal
+LPHD;2;StErrRly;Self-Diagnostic Relay Status;HR41B7 - Self-Diagnostic Relay Status;SDp_TM_$LPHD1$ST$StErrRly$stVal
+SPTR;1;HPTmpClc2;Current Value of Winding 2 Temperature;HR42 - Current Value of Winding 2 Temperature;SDp_TM_$SPTR1$MX$HPTmpClc2$mag$f \ SDp_TM_$SPTR1$MX$HPTmpClc2$mag$i \ SDp_TM_$SPTR1$MX$HPTmpClc2$instMag$f \ SDp_TM_$SPTR1$MX$HPTmpClc2$instMag$i
+SPTR;1;HPTmpClc3;Current Value of Winding 3 Temperature;HR43 - Current Value of Winding 3 Temperature;SDp_TM_$SPTR1$MX$HPTmpClc3$mag$f \ SDp_TM_$SPTR1$MX$HPTmpClc3$mag$i \ SDp_TM_$SPTR1$MX$HPTmpClc3$instMag$f \ SDp_TM_$SPTR1$MX$HPTmpClc3$instMag$i
+MMXN;1;AmpPct2;Current Winding 2 Load Percentage;HR44 - Current Winding 2 Load Percentage;SDp_TM_$MMXN1$MX$AmpPct2$mag$f \ SDp_TM_$MMXN1$MX$AmpPct2$mag$i \ SDp_TM_$MMXN1$MX$AmpPct2$instMag$f \ SDp_TM_$MMXN1$MX$AmpPct2$instMag$i
+MMXN;1;AmpPct3;Current Winding 3 Load Percentage;HR45 - Current Winding 3 Load Percentage;SDp_TM_$MMXN1$MX$AmpPct3$mag$f \ SDp_TM_$MMXN1$MX$AmpPct3$mag$i \ SDp_TM_$MMXN1$MX$AmpPct3$instMag$f \ SDp_TM_$MMXN1$MX$AmpPct3$instMag$i
+MMXN;1;Amp2;Current Value of Winding 2 Measured Current;HR48 - Current Value of Winding 2 Measured Current;SDp_TM_$MMXN1$MX$Amp2$mag$f \ SDp_TM_$MMXN1$MX$Amp2$mag$i \ SDp_TM_$MMXN1$MX$Amp2$instMag$f \ SDp_TM_$MMXN1$MX$Amp2$instMag$i
+MMXN;1;Amp3;Current Value of Winding 3 Measured Current;HR49 - Current Value of Winding 3 Measured Current;SDp_TM_$MMXN1$MX$Amp3$mag$f \ SDp_TM_$MMXN1$MX$Amp3$mag$i \ SDp_TM_$MMXN1$MX$Amp3$instMag$f \ SDp_TM_$MMXN1$MX$Amp3$instMag$i
+MMXN;1;RTDTmp1;Current measurement of TM1 temperature sensor (RTD A);HR56 - Current measurement of TM1 temperature sensor (RTD A);SDp_TM_$MMXN1$MX$RTDTmp1$mag$f \ SDp_TM_$MMXN1$MX$RTDTmp1$mag$i \ SDp_TM_$MMXN1$MX$RTDTmp1$instMag$f \ SDp_TM_$MMXN1$MX$RTDTmp1$instMag$i
+MMXN;1;RTDTmp2;Current measurement of TM1 temperature sensor (RTD B);HR57 - Current measurement of TM1 temperature sensor (RTD B);SDp_TM_$MMXN1$MX$RTDTmp2$mag$f \ SDp_TM_$MMXN1$MX$RTDTmp2$mag$i \ SDp_TM_$MMXN1$MX$RTDTmp2$instMag$f \ SDp_TM_$MMXN1$MX$RTDTmp2$instMag$i
+LPHD;1;CommErr;Communication error between TM1 and TM2;HR1022B0 - Communication error between TM1 and TM2;SDp_TM_$LPHD1$ST$CommErr$stVal
+LPHD;1;SupCfgErr;Incorrect programming of SUP parameter;HR1022B1 - Incorrect programming of SUP parameter;SDp_TM_$LPHD1$ST$SupCfgErr$stVal
+LPHD;1;EEPROMErr;EEPROM memory failure;HR1022B2 - EEPROM memory failure;SDp_TM_$LPHD1$ST$EEPROMErr$stVal
+LPHD;1;OvMeaErr;Measurements overflow;HR1022B3 - Measurements overflow;SDp_TM_$LPHD1$ST$OvMeaErr$stVal
+LPHD;1;RTDDiffErr;Oil temperature measurement failure;HR1022B4 - Oil temperature measurement failure;SDp_TM_$LPHD1$ST$RTDDiffErr$stVal
+LPHD;1;IntConvErr;AD Converter failure;HR1022B5 - AD Converter failure;SDp_TM_$LPHD1$ST$IntConvErr$stVal
+LPHD;1;AmpSenErr1;Load current 1 measurement failure;HR1022B6 - Load current 1 measurement failure;SDp_TM_$LPHD1$ST$AmpSenErr1$stVal
+LPHD;2;AmpSenErr2;Load current 2 measurement failure;HR1022B7 - Load current 2 measurement failure;SDp_TM_$LPHD2$ST$AmpSenErr2$stVal
+LPHD;1;RTD1MeaErr1;Sensor A temperature measurement failure (term. 1);HR1022B8 - Sensor A temperature measurement failure (term. 1);SDp_TM_$LPHD1$ST$RTD1MeaErr1$stVal
+LPHD;1;RTD2MeaErr1;Sensor B temperature measurement failure (term. 1);HR1022B9 - Sensor B temperature measurement failure (term. 1);SDp_TM_$LPHD1$ST$RTD2MeaErr1$stVal
+LPHD;1;RTD1MeaErr2;Sensor A temperature measurement failure (term. 2);HR1022B10 - Sensor A temperature measurement failure (term. 2);SDp_TM_$LPHD1$ST$RTD1MeaErr2$stVal
+LPHD;1;RTD2MeaErr2;Sensor B temperature measurement failure (term. 2);HR1022B11 - Sensor B temperature measurement failure (term. 2);SDp_TM_$LPHD1$ST$RTD2MeaErr2$stVal
+LPHD;1;RTD1DiagErr1;Sensor A temp. measurement failure - sudden change;HR1022B12 - Sensor A temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD1DiagErr1$stVal
+LPHD;1;RTD2DiagErr1;Sensor B temp. measurement failure - sudden change;HR1022B13 - Sensor B temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD2DiagErr1$stVal
+LPHD;1;RTD1DiagErr1;Sensor A temp. measurement failure - sudden change;HR1023B4 - Sensor A temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD1DiagErr1$stVal
+LPHD;1;RTD2DiagErr1;Sensor B temp. measurement failure - sudden change;HR1029B4 - Sensor B temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD2DiagErr1$stVal
+MMXN;1;RTDTmp3;Current measurement of TM2 temperature sensor (RTD A);HR1500 - Current measurement of TM2 temperature sensor (RTD A);SDp_TM_$MMXN1$MX$RTDTmp3$mag$f \ SDp_TM_$MMXN1$MX$RTDTmp3$mag$i \ SDp_TM_$MMXN1$MX$RTDTmp3$instMag$f \ SDp_TM_$MMXN1$MX$RTDTmp3$instMag$i
+MMXN;1;RTDTmp4;Current measurement of TM2 temperature sensor (RTD B);HR1501 - Current measurement of TM2 temperature sensor (RTD B);SDp_TM_$MMXN1$MX$RTDTmp4$mag$f \ SDp_TM_$MMXN1$MX$RTDTmp4$mag$i \ SDp_TM_$MMXN1$MX$RTDTmp4$instMag$f \ SDp_TM_$MMXN1$MX$RTDTmp4$instMag$i
+LPHD;1;CommErr;Communication error between TM1 and TM2;HR1502B0 - Communication error between TM1 and TM2;SDp_TM_$LPHD1$ST$CommErr$stVal
+LPHD;1;EEPROMErr;EEPROM memory failure;HR1502B2 - EEPROM memory failure;SDp_TM_$LPHD1$ST$EEPROMErr$stVal
+LPHD;1;OvMeaErr;Measurements overflow;HR1502B3 - Measurements overflow;SDp_TM_$LPHD1$ST$OvMeaErr$stVal
+LPHD;1;IntConvErr;AD Converter Failure;HR1502B5 - AD Converter Failure;SDp_TM_$LPHD1$ST$IntConvErr$stVal
+LPHD;1;AmpSenErr1;Load current 1 measurement failure;HR1502B6 - Load current 1 measurement failure;SDp_TM_$LPHD1$ST$AmpSenErr1$stVal
+LPHD;2;AmpSenErr2;Load current 2 measurement failure;HR1502B7 - Load current 2 measurement failure;SDp_TM_$LPHD2$ST$AmpSenErr2$stVal
+LPHD;1;RTD1MeaErr1;Sensor A temperature measurement failure (term. 1);HR1502B8 - Sensor A temperature measurement failure (term. 1);SDp_TM_$LPHD1$ST$RTD1MeaErr1$stVal
+LPHD;1;RTD2MeaErr1;Sensor B temperature measurement failure (term. 1);HR1502B9 - Sensor B temperature measurement failure (term. 1);SDp_TM_$LPHD1$ST$RTD2MeaErr1$stVal
+LPHD;1;RTD1MeaErr2;Sensor A temperature measurement failure (term. 2);HR1502B10 - Sensor A temperature measurement failure (term. 2);SDp_TM_$LPHD1$ST$RTD1MeaErr2$stVal
+LPHD;1;RTD2MeaErr2;Sensor B temperature measurement failure (term. 2);HR1502B11 - Sensor B temperature measurement failure (term. 2);SDp_TM_$LPHD1$ST$RTD2MeaErr2$stVal
+LPHD;1;RTD1DiagErr1;Sensor A temp. measurement failure - sudden change;HR1502B12 - Sensor A temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD1DiagErr1$stVal
+LPHD;1;RTD2DiagErr1;Sensor B temp. measurement failure - sudden change;HR1502B13 - Sensor B temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD2DiagErr1$stVal
+SPTR;1;HPTmpTrDet2;Winding 2 trip temperature achieved;HR1503B2 - Winding 2 trip temperature achieved;SDp_TM_$SPTR1$ST$HPTmpTrDet2$stVal
+SPTR;1;HPTmpTrDet3;Winding 3 trip temperature achieved;HR1503B3 - Winding 3 trip temperature achieved;SDp_TM_$SPTR1$ST$HPTmpTrDet3$stVal
+LPHD;1;RTD1DiagErr1;Sensor A temp. measurement failure - sudden change;HR1503B4 - Sensor A temp. measurement failure - sudden change;SDp_TM_$LPHD1$ST$RTD1DiagErr1$stVal

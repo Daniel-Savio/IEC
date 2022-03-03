@@ -44,7 +44,7 @@ $file = new Files();
         </nav>
         <a href="#" class="cta"><button>Botão</button></a>
     </header>
-
+<!-- Modal -->
     <div class="modal modal-active">
         <div class="modal-container">
             <div class="modal-header">
@@ -54,35 +54,42 @@ $file = new Files();
                 </span>
             </div>
 
-            <form class="modal-body">
+            <form class="modal-body" method="POST" action="./api/Eletronorte.php">
                 <div class="select-area">
                     <div class="list-group">
-                    <div class="csv-list">
-                        <?php   
-                            $csvList = $file->fetchCsv();
-                            foreach ($csvList as $csv) {
-                                echo "<span class='csv-list-item'>{$csv['csv_file_name']}</span>";
-                            }
-                        ?>
-                    </div>
-                    <div class="xml-list">
-                    </div>
-                    
+                        <div class="csv-list">
+                            <?php   
+                                $csvList = $file->fetchCsv();
+                                foreach ($csvList as $csv) {
+                                    echo 
+                                    "
+                                    <div class='csv-list-item'>
+                                        <input type='radio' id='csv-{$csv['id']}' name='csv' value='{$csv['csv_file_path']}'>
+                                        <label  for='csv-{$csv['id']}'>
+                                            {$csv['csv_file_name']}
+                                        </label>
+                                    </div>";
+                                }
+                            ?>
+                        </div>
+                        <div class="xml-list">
                         <?php 
                          foreach ($file->fetchXml() as  $xml) {
                             echo
-                            "<span class='xml-list-item'>" .
-                                $xml['xml_file_name'] .
-                                "<p style='display:none'> "
-                                . $xml["id"] .
-                                " </p>" .
-                                "</span>";
+                            "  
+                            <div class='xml-list-item'>
+                                <input type='radio' id='xml-{$xml['id']}' name='xml' value='{$xml['xml_file_path']}'>
+                                <label  for='xml-{$xml['id']}'>" .
+                                    $xml['xml_file_name'] .
+                                "</label>
+                            </div>";
                         }
                         ?>
+                        </div>
                     </div>
                 </div>
 
-                <button class="btn">Converter</button>
+                <button class="btn" type="submit">Converter</button>
             </form>
 
         </div>
@@ -112,7 +119,8 @@ $file = new Files();
                     }
 
                     ?>
-                    <div class="btn" id="visualizar"> To eletronorte ></div>
+                    <div class="btn" id="visualizar">Eletronorte</div>
+                    <div class="btn" id="comparar">Comparar</div>
                 </div>
             </div>
 
@@ -123,11 +131,6 @@ $file = new Files();
         </aside>
 
         <section class="visual">
-
-            <!-- <div class="warning">
-                <p>Nenhum arquivo selecionado para vizualização</p>
-            </div> -->
-
             <?php
             foreach ($file->fetchXml() as  $data) {
                 $xml = new XML($data['xml_file_path']);
@@ -137,6 +140,7 @@ $file = new Files();
                     <thead>
                         <tr>
                             <th class='table-name'>{$data['xml_file_name']}</th>
+                            <th class='file-download'><a href='{$data['xml_file_path']}'> Download </a></th>
                         </tr>
                         <tr>
                             <th class='table-ln'>

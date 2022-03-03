@@ -221,7 +221,8 @@ main h3{
 .file span{
     margin: 5px auto;
     border-radius: 20px;
-    background: #eee;
+    background-color: rgba(0 0 0 .5);
+    color:rgb(92, 92, 92);
     padding: 2% 5%;
     font-size: 14px;
     width: 100%;

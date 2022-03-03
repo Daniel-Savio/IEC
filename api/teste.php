@@ -3,5 +3,6 @@ include("xml.php");
 include("csv.php");
 
 $xml = new xml();
-$csv = new csv("../ext/TM-CSV.csv");
-$xml->toEletronorte("../ext/TM.xml", $csv->getData(), "TM");
+$csv = new csv("../ext/Aux-tm.csv");
+// var_dump($csv->getData());
+$xml->toEletronorte("../ext/tm.xml", $csv->getData(), "TM.xml");

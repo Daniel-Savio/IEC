@@ -61,15 +61,15 @@ class XML
                     $data[$row][4] = $value->{'DAI'}->{'Val'};
                     $data[$row][5] = $data[$row][1] . $data[$row][2] . $data[$row][3];
 
-                    for ($i = 2; $i < count($csv); $i++) {
-                        for ($j = 0; $j < 3; $j++) {
+                    for ($i = 3; $i < count($csv); $i++) {
+                        for ($j = 0; $j <=4 ; $j++) {
                             $idCSV = $csv[$i][0] . $csv[$i][1] . $csv[$i][2];
-
                             if ($idCSV ==  $data[$row][5]) {
                                 $value->{'DAI'}->{'Val'} = $csv[$i][4];
-                                $xml->asXML("{$name}-eletronorte.xml");
+                                $xml->asXML("../ext/{$name}");
                             }
                         }
+                        
                     }
                 }
                 $row++;
