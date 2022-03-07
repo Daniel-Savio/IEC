@@ -42,7 +42,7 @@ $file = new Files();
                 </li>
             </ul>
         </nav>
-        <a href="#" class="cta"><button>Botão</button></a>
+        <a href="./crud.php" class="cta"><button>CRUD</button></a>
     </header>
 <!-- Modal -->
     <div class="modal modal-active">
@@ -120,7 +120,7 @@ $file = new Files();
 
                     ?>
                     <div class="btn" id="visualizar">Eletronorte</div>
-                    <div class="btn" id="comparar">Comparar</div>
+                    <div class="btn" id="comparar">Encontrar iguais</div>
                 </div>
             </div>
 

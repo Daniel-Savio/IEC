@@ -19,6 +19,7 @@ class Files extends Conn{
 
         $this->connDb()->query($sql);
     }
+
     public function fetchXml()
     {
         $fetchXml =  $this->connDb()->query("select * from xmlfiles;");
@@ -40,6 +41,12 @@ class Files extends Conn{
         return $xmlJson;
 
     }
+
+    public function deleteXml($id)
+    {
+       $this->connDb()->query("delete from xmlfiles where id = {$id}");
+    }
+
     public function setCsv($name, $path)
     {
         $date = date('Y-m-d H:i:s');
@@ -74,6 +81,11 @@ class Files extends Conn{
         }
 
         return $csvJson;
+    }
+
+    public function deleteCsv($id)
+    {
+       $this->connDb()->query("delete from csvfiles where id = {$id}");
     }
 
 }

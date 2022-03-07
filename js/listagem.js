@@ -29,6 +29,8 @@ for (let i = 0; i < spans.length; i++) {
         let pos = fullName.indexOf(".")+4
         let name = fullName.substring(0,pos);
         let table = document.getElementById(name);
+        console.log(name);
+        console.log(table);
         table.classList.add("hidden-table")
           
     }else{

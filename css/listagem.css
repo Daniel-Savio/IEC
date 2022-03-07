@@ -64,7 +64,7 @@ body{
 }
 #comparar{
     margin-top: 1rem;
-    background-color: rgba(95, 158, 160, 1);
+    background-color: rgb(59, 142, 145);
 }
 #comparar:hover{
     background-color: rgba(95, 158, 160, .8);
@@ -149,7 +149,7 @@ body{
    
 }
 .xml-table .file-download{
-    background-color: bisque;
+    background-color: rgb(123, 212, 130);
     border-radius: .5rem;
     padding: .5rem;
 }
@@ -157,6 +157,24 @@ body{
     width: fit-content;
 }
 .row{
+    font-size: smaller;
     background-color: #eee;
     width: 100%;
+}
+.high-light{
+    background: red;
+    color: white;
+}
+@media(max-width: 1200px){
+    .visual{
+        height: 600px;
+    
+    }
+}
+
+@media(min-width: 1500px){
+    .visual{
+        height: 900px;
+    
+    }
 }
