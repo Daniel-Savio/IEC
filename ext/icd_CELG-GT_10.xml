@@ -160,7 +160,7 @@
             </ReportControl>
             <DOI name="CommErr">
               <DAI name="d">
-                <Val>Communication error between TM1 and TM2</Val>
+                <Val>Set2 communication error</Val>
               </DAI>
             </DOI>
             <DOI name="SupCfgErr">
@@ -170,7 +170,7 @@
             </DOI>
             <DOI name="EEPROMErr">
               <DAI name="d">
-                <Val>EEPROM memory failure</Val>
+                <Val>Set2 memory failure</Val>
               </DAI>
             </DOI>
             <DOI name="OvMeaErr">
@@ -1120,7 +1120,7 @@
             </DOI>
             <DOI name="CommErr">
               <DAI name="d">
-                <Val>Error in communication between HU-S and HU-C</Val>
+                <Val>Set2 communication error</Val>
               </DAI>
             </DOI>
             <DOI name="MemErr2">
@@ -1393,79 +1393,57 @@
             </ReportControl>
             <DOI name="EEPROMErr">
               <DAI name="d">
-                <Val>
-									Indication of EEPROM memory failure self-diagnostic
-								</Val>
+                <Val>Set2 memory failure</Val>
               </DAI>
             </DOI>
             <DOI name="AMeaErr">
               <DAI name="d">
-                <Val>
-									Indication of current measurement failure self-diagnostic
-								</Val>
+                <Val>Indication of current measurement failure self-diagnostic</Val>
               </DAI>
             </DOI>
             <DOI name="VMeaErr">
               <DAI name="d">
-                <Val>
-									Indication of voltage measurement failure self-diagnostic
-								</Val>
+                <Val>Indication of voltage measurement failure self-diagnostic</Val>
               </DAI>
             </DOI>
             <DOI name="DigInErr">
               <DAI name="d">
-                <Val>
-									Indication of digital inputs failure self-diagnostic
-								</Val>
+                <Val>Indication of digital inputs failure self-diagnostic</Val>
               </DAI>
             </DOI>
             <DOI name="LTCChkErr">
               <DAI name="d">
-                <Val>
-									Indication of LTC check self-diagnostic
-								</Val>
+                <Val>Indication of LTC check self-diagnostic</Val>
               </DAI>
             </DOI>
             <DOI name="InCommErr">
               <DAI name="d">
-                <Val>
-									Indication of internal communication failure self-diagnostic
-								</Val>
+                <Val>Indication of internal communication failure self-diagnostic</Val>
               </DAI>
             </DOI>
             <DOI name="SetDay">
               <DAI name="d">
-                <Val>
-									Parameter of clock adjustment - Day
-								</Val>
+                <Val>Parameter of clock adjustment - Day</Val>
               </DAI>
             </DOI>
             <DOI name="SetMonth">
               <DAI name="d">
-                <Val>
-									Parameter of clock adjustment - Month
-								</Val>
+                <Val>Parameter of clock adjustment - Month</Val>
               </DAI>
             </DOI>
             <DOI name="SetYear">
               <DAI name="d">
-                <Val>
-									Parameter of clock adjustment - Year
-								</Val>
+                <Val>Parameter of clock adjustment - Year</Val>
               </DAI>
             </DOI>
             <DOI name="SetHour">
               <DAI name="d">
-                <Val>
-									Parameter of clock adjustment - Hour
-								</Val>
+                <Val>Parameter of clock adjustment - Hour</Val>
               </DAI>
             </DOI>
             <DOI name="Setm">
               <DAI name="d">
-                <Val>
-									Parameter of clock adjustment - Minute
-								</Val>
+                <Val>Parameter of clock adjustment - Minute</Val>
               </DAI>
             </DOI>
           </LN>
@@ -1554,9 +1532,7 @@
             </DOI>
             <DOI name="TapOpErr">
               <DAI name="d">
-                <Val>
-									Tap change error or tap indication failure self-diagnostic
-								</Val>
+                <Val>Read Tap position error</Val>
               </DAI>
             </DOI>
             <DOI name="TapPosInd">
@@ -1747,17 +1723,17 @@
             </ReportControl>
             <DOI name="CommErr">
               <DAI name="d">
-                <Val>Set1 communication error</Val>
+                <Val>Set2 communication error</Val>
               </DAI>
             </DOI>
             <DOI name="EEPROMErr">
               <DAI name="d">
-                <Val>Set1 memory failure</Val>
+                <Val>Set2 memory failure</Val>
               </DAI>
             </DOI>
             <DOI name="MeaErr">
               <DAI name="d">
-                <Val>Set1 internal failure</Val>
+                <Val>Set2 internal failure</Val>
               </DAI>
             </DOI>
           </LN>
@@ -1792,72 +1768,72 @@
             </ReportControl>
             <DOI name="ReactWrn">
               <DAI name="d">
-                <Val>Set1 PhA High Capacitance Alarm</Val>
+                <Val>Set2 PhA High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactAlm">
               <DAI name="d">
-                <Val>Set1 PhA Very High Capacitance Alarm</Val>
+                <Val>Set2 PhA Very High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndWrn">
               <DAI name="d">
-                <Val>Set1 PhA High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhA High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndAlm">
               <DAI name="d">
-                <Val>Set1 PhA Very High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhA Very High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactWrn">
               <DAI name="d">
-                <Val>Set1 PhA High Tan Delta Alarm</Val>
+                <Val>Set2 PhA High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactAlm">
               <DAI name="d">
-                <Val>Set1 PhA Very High Tan Delta Alarm</Val>
+                <Val>Set2 PhA Very High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndWrn">
               <DAI name="d">
-                <Val>Set1 PhA High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhA High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndAlm">
               <DAI name="d">
-                <Val>Set1 PhA Very High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhA Very High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LLeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhA Low Leakage Alarm</Val>
+                <Val>Set2 PhA Low Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhA High Leakage Alarm</Val>
+                <Val>Set2 PhA High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAAlm">
               <DAI name="d">
-                <Val>Set1 PhA Very High Leakage Alarm</Val>
+                <Val>Set2 PhA Very High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="React">
               <DAI name="d">
-                <Val>Set1 PhA Capacitance</Val>
+                <Val>Set2 PhA Capacitance</Val>
               </DAI>
             </DOI>
             <DOI name="LosFact">
               <DAI name="d">
-                <Val>Set1 PhA Tan Delta</Val>
+                <Val>Set2 PhA Tan Delta</Val>
               </DAI>
             </DOI>
             <DOI name="LeakA">
               <DAI name="d">
-                <Val>Set1 PhA Leakage Current</Val>
+                <Val>Set2 PhA Leakage Current</Val>
               </DAI>
             </DOI>
           </LN>
@@ -1892,72 +1868,72 @@
             </ReportControl>
             <DOI name="ReactWrn">
               <DAI name="d">
-                <Val>Set1 PhB High Capacitance Alarm</Val>
+                <Val>Set2 PhB High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactAlm">
               <DAI name="d">
-                <Val>Set1 PhB Very High Capacitance Alarm</Val>
+                <Val>Set2 PhB Very High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndWrn">
               <DAI name="d">
-                <Val>Set1 PhB High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhB High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndAlm">
               <DAI name="d">
-                <Val>Set1 PhB Very High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhB Very High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactWrn">
               <DAI name="d">
-                <Val>Set1 PhB High Tan Delta Alarm</Val>
+                <Val>Set2 PhB High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactAlm">
               <DAI name="d">
-                <Val>Set1 PhB Very High Tan Delta Alarm</Val>
+                <Val>Set2 PhB Very High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndWrn">
               <DAI name="d">
-                <Val>Set1 PhB High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhB High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndAlm">
               <DAI name="d">
-                <Val>Set1 PhB Very High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhB Very High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LLeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhB Low Leakage Alarm</Val>
+                <Val>Set2 PhB Low Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhB High Leakage Alarm</Val>
+                <Val>Set2 PhB High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAAlm">
               <DAI name="d">
-                <Val>Set1 PhB Very High Leakage Alarm</Val>
+                <Val>Set2 PhB Very High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="React">
               <DAI name="d">
-                <Val>Set1 PhB Capacitance</Val>
+                <Val>Set2 PhB Capacitance</Val>
               </DAI>
             </DOI>
             <DOI name="LosFact">
               <DAI name="d">
-                <Val>Set1 PhB Tan Delta</Val>
+                <Val>Set2 PhB Tan Delta</Val>
               </DAI>
             </DOI>
             <DOI name="LeakA">
               <DAI name="d">
-                <Val>Set1 PhB Leakage Current</Val>
+                <Val>Set2 PhB Leakage Current</Val>
               </DAI>
             </DOI>
           </LN>
@@ -1992,72 +1968,72 @@
             </ReportControl>
             <DOI name="ReactWrn">
               <DAI name="d">
-                <Val>Set1 PhC High Capacitance Alarm</Val>
+                <Val>Set2 PhC High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactAlm">
               <DAI name="d">
-                <Val>Set1 PhC Very High Capacitance Alarm</Val>
+                <Val>Set2 PhC Very High Capacitance Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndWrn">
               <DAI name="d">
-                <Val>Set1 PhC High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhC High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="ReactTndAlm">
               <DAI name="d">
-                <Val>Set1 PhC Very High Capacitance Trend Alarm</Val>
+                <Val>Set2 PhC Very High Capacitance Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactWrn">
               <DAI name="d">
-                <Val>Set1 PhC High Tan Delta Alarm</Val>
+                <Val>Set2 PhC High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFactAlm">
               <DAI name="d">
-                <Val>Set1 PhC Very High Tan Delta Alarm</Val>
+                <Val>Set2 PhC Very High Tan Delta Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndWrn">
               <DAI name="d">
-                <Val>Set1 PhC High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhC High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LosFacTndAlm">
               <DAI name="d">
-                <Val>Set1 PhC Very High Tan Delta Trend Alarm</Val>
+                <Val>Set2 PhC Very High Tan Delta Trend Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LLeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhC Low Leakage Alarm</Val>
+                <Val>Set2 PhC Low Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAWrn">
               <DAI name="d">
-                <Val>Set1 PhC High Leakage Alarm</Val>
+                <Val>Set2 PhC High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="LeakAAlm">
               <DAI name="d">
-                <Val>Set1 PhC Very High Leakage Alarm</Val>
+                <Val>Set2 PhC Very High Leakage Alarm</Val>
               </DAI>
             </DOI>
             <DOI name="React">
               <DAI name="d">
-                <Val>Set1 PhC Capacitance</Val>
+                <Val>Set2 PhC Capacitance</Val>
               </DAI>
             </DOI>
             <DOI name="LosFact">
               <DAI name="d">
-                <Val>Set1 PhC Tan Delta</Val>
+                <Val>Set2 PhC Tan Delta</Val>
               </DAI>
             </DOI>
             <DOI name="LeakA">
               <DAI name="d">
-                <Val>Set1 PhC Leakage Current</Val>
+                <Val>Set2 PhC Leakage Current</Val>
               </DAI>
             </DOI>
           </LN>
@@ -2472,17 +2448,17 @@
             </ReportControl>
             <DOI name="TapPosInd">
               <DAI name="d">
-                <Val>Tap position indication (SPS address 1)</Val>
+                <Val>Tap position indication (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Rem">
               <DAI name="d">
-                <Val>Remote operation state (SPS address 1)</Val>
+                <Val>Remote operation state (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Auto">
               <DAI name="d">
-                <Val>Automatic operation state (SPS address 1)</Val>
+                <Val>direct-with-normal-security</Val>
               </DAI>
             </DOI>
             <DOI name="ParOp">
@@ -2492,32 +2468,32 @@
             </DOI>
             <DOI name="TrfMod">
               <DAI name="d">
-                <Val>Single phase operation state (SPS address 1)</Val>
+                <Val>Single phase operation state (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="RdyChgPos">
               <DAI name="d">
-                <Val>Ready to change tap (SPS address 1)</Val>
+                <Val>Ready to change tap (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PhSyncErr">
               <DAI name="d">
-                <Val>Phase Synchronism Error (SPS address 1)</Val>
+                <Val>Phase Synchronism Error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="BnkSyncErr">
               <DAI name="d">
-                <Val>Bank Synchronism Error (SPS address 1)</Val>
+                <Val>Bank Synchronism Error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PrgErr">
               <DAI name="d">
-                <Val>Programing error (SPS address 1)</Val>
+                <Val>Programing error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PosErr">
               <DAI name="d">
-                <Val>Read Tap position error (SPS address 1)</Val>
+                <Val>Read Tap position error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Bnk">
@@ -2584,17 +2560,17 @@
             </ReportControl>
             <DOI name="TapPosInd">
               <DAI name="d">
-                <Val>Tap position indication (SPS address 1)</Val>
+                <Val>Tap position indication (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Rem">
               <DAI name="d">
-                <Val>Remote operation state (SPS address 1)</Val>
+                <Val>Remote operation state (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Auto">
               <DAI name="d">
-                <Val>Automatic operation state (SPS address 1)</Val>
+                <Val>direct-with-normal-security</Val>
               </DAI>
             </DOI>
             <DOI name="ParOp">
@@ -2604,32 +2580,32 @@
             </DOI>
             <DOI name="TrfMod">
               <DAI name="d">
-                <Val>Single phase operation state (SPS address 1)</Val>
+                <Val>Single phase operation state (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="RdyChgPos">
               <DAI name="d">
-                <Val>Ready to change tap (SPS address 1)</Val>
+                <Val>Ready to change tap (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PhSyncErr">
               <DAI name="d">
-                <Val>Phase Synchronism Error (SPS address 1)</Val>
+                <Val>Phase Synchronism Error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="BnkSyncErr">
               <DAI name="d">
-                <Val>Bank Synchronism Error (SPS address 1)</Val>
+                <Val>Bank Synchronism Error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PrgErr">
               <DAI name="d">
-                <Val>Programing error (SPS address 1)</Val>
+                <Val>Programing error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="PosErr">
               <DAI name="d">
-                <Val>Read Tap position error (SPS address 1)</Val>
+                <Val>Read Tap position error (SPS address 3)</Val>
               </DAI>
             </DOI>
             <DOI name="Bnk">
@@ -2707,7 +2683,7 @@
             </DOI>
             <DOI name="Auto">
               <DAI name="d">
-                <Val>Automatic operation state (SPS address 3)</Val>
+                <Val>direct-with-normal-security</Val>
               </DAI>
             </DOI>
             <DOI name="TrfMod">

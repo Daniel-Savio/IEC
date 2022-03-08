@@ -106,7 +106,7 @@ function sendXML( xml )
     
     // Define what happens on successful data submission
     XHR.addEventListener( 'load', function( event ) {
-      alert( 'Yeah! Data sent and response loaded.' );
+      
     });
   
     // Define what happens in case of error
@@ -158,7 +158,7 @@ submit.addEventListener("click",(evt)=>{
             sendXML(file);
         }
         document.location.reload(true);
-        alert( 'Yeah! Data sent and response loaded.' );
+        
     }
 
     if(filesCSV.length){
@@ -167,7 +167,7 @@ submit.addEventListener("click",(evt)=>{
             sendCSV(file);
         }
         document.location.reload(true);
-        alert( 'Yeah! Data sent and response loaded.' );
+       
     }
     
     

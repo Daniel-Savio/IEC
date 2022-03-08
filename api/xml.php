@@ -76,4 +76,41 @@ class XML
             }
         }
     }
+    public function save($url, $array, $name)
+    {
+        $xml = simplexml_load_file($url);
+        $data = [];
+        $class = $xml->{'IED'}->{'AccessPoint'}->{'Server'}->{'LDevice'};
+        $row = 0;
+
+        foreach ($class as $class) {
+            $class1 = $class->{'LN'};
+            foreach ($class1 as $class1) {
+                $doi = $class1->{'DOI'};
+                foreach ($doi as $value) {
+                    $data[$row][0] = $class["desc"];
+                    $data[$row][1] = $class1["lnClass"];
+                    $data[$row][2] = $class1["inst"];
+                    $data[$row][3] = $value["name"];
+                    $data[$row][4] = $value->{'DAI'}->{'Val'};
+                    $data[$row][5] = $data[$row][1] . $data[$row][2] . $data[$row][3];
+                   
+
+                    for ($i = 0; $i < count($array); $i++) {
+                        for ($j = 0; $j <=4 ; $j++) {
+                            $idArray = $array[$i][1] . $array[$i][2] . $array[$i][3];
+    
+                            if ($idArray ==  $data[$row][5]) {
+                                echo  "ID XML = ".$data[$row][5]. " </br> ------ </br> ID array = " . $idArray . " => {$array[$i][4]}" ."</br>";
+                                $value->{'DAI'}->{'Val'} = $array[$i][4];
+                                $xml->asXML("../ext/{$name}");
+                            }
+                        }
+                        
+                    }
+                }
+                $row++;
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 let modal = document.querySelector(".modal");
-let toEletro = document.querySelector("#visualizar");
-let closeBtn = document.querySelector("#close");
+const toEletro = document.querySelector("#visualizar");
+const closeBtn = document.querySelector("#close");
 const comparar = document.querySelector("#comparar");
 
 //Eltronorte

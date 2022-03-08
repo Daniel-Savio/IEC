@@ -25,7 +25,7 @@ if(isset($_GET['id_del'])){
     
 
 
-    <title>CRUD</title>
+    <title>Gerenciar arquivos</title>
 </head>
 
 <body>

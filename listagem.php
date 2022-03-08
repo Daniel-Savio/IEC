@@ -3,10 +3,7 @@ include("./api/xml.php");
 include("./api/Files.php");
 $file = new Files();
 
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +16,8 @@ $file = new Files();
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/listagem.css">
     <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/loader.css">
+    
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -42,9 +41,16 @@ $file = new Files();
                 </li>
             </ul>
         </nav>
-        <a href="./crud.php" class="cta"><button>CRUD</button></a>
+        <a href="./crud.php" class="cta"><button>Gerenciar arquivos</button></a>
     </header>
 <!-- Modal -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span> </span>
+        <br>
+        <p>Salvando, agurade</p>
+    </div>
+
     <div class="modal modal-active">
         <div class="modal-container">
             <div class="modal-header">
@@ -53,7 +59,6 @@ $file = new Files();
                     close
                 </span>
             </div>
-
             <form class="modal-body" method="POST" action="./api/Eletronorte.php">
                 <div class="select-area">
                     <div class="list-group">
@@ -89,7 +94,7 @@ $file = new Files();
                     </div>
                 </div>
 
-                <button class="btn" type="submit">Converter</button>
+                <button class="btn" id='converter' type="submit">Converter</button>
             </form>
 
         </div>
@@ -141,6 +146,7 @@ $file = new Files();
                         <tr>
                             <th class='table-name'>{$data['xml_file_name']}</th>
                             <th class='file-download'><a href='{$data['xml_file_path']}'> Download </a></th>
+                            <th class='file-save'> Save </th>
                         </tr>
                         <tr>
                             <th class='table-ln'>
@@ -160,10 +166,11 @@ $file = new Files();
                             </th>
                         </tr>
                     </thead>";
+               
                 foreach ($xmlContent as $data) {
                     echo "<tr class='row'>";
                     foreach ($data as $col) {
-                        echo "<td>" . $col . "</td>";
+                        echo "<td contenteditable='true'>" . $col . "</td>";
                     }
                     echo "</tr>";
                 }

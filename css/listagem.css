@@ -153,18 +153,30 @@ body{
     border-radius: .5rem;
     padding: .5rem;
 }
+.xml-table .file-save{
+    background-color: rgba(144, 147, 196, 0.74);
+    border-radius: .5rem;
+    padding: .5rem;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
 .xml-table .table-ln{
     width: fit-content;
 }
+
 .row{
     font-size: smaller;
     background-color: #eee;
     width: 100%;
 }
+
 .high-light{
     background: red;
     color: white;
 }
+
+
 @media(max-width: 1200px){
     .visual{
         height: 600px;
