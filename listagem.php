@@ -48,7 +48,7 @@ $file = new Files();
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span> </span>
         <br>
-        <p>Salvando, agurade</p>
+        <p>Carregando, agurade</p>
     </div>
 
     <div class="modal modal-active">
@@ -145,8 +145,10 @@ $file = new Files();
                     <thead>
                         <tr>
                             <th class='table-name'>{$data['xml_file_name']}</th>
-                            <th class='file-download'><a href='{$data['xml_file_path']}'> Download </a></th>
-                            <th class='file-save'> Save </th>
+                            <th class='file-download'><a href='{$data['xml_file_path']}'> 
+                            <img src='./assets/download.svg'/>
+                             </a></th>
+                            <th class='file-save'> <img src='./assets/save.svg'/> </th>
                         </tr>
                         <tr>
                             <th class='table-ln'>

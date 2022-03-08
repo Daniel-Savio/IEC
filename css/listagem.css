@@ -152,6 +152,10 @@ body{
     background-color: rgb(123, 212, 130);
     border-radius: .5rem;
     padding: .5rem;
+    cursor: pointer;
+}
+.xml-table .file-download img{
+    width: 30px;
 }
 .xml-table .file-save{
     background-color: rgba(144, 147, 196, 0.74);

@@ -106,7 +106,7 @@
 						</ReportControl>
 						<DOI name="StErrRly">
 							<DAI name="d">
-								<Val>HR23B7 - Self-Diagnostic Relay Status</Val>
+								<Val>teste</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CommErr">

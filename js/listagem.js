@@ -88,6 +88,7 @@ saveBtns.forEach((saveBtn)=>{
             arr.push(celula.innerText);
         }
         //console.log(arr);
+        loader.querySelector("p").innerText = "Documentos grandes podem levar cerca de 2 min para serem salvos";
         loader.style.display = "flex";
         sendInfo(JSON.stringify({arr}), tableName.innerText);
         

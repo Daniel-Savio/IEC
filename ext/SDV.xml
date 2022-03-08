@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL/ SCL.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL/ SCL.xsd">
 	<Header toolID="Treetech ICD Configurator" revision="4.02" version="Release SDV" id="SDV ICD File">
 		<History>
-			<Hitem what="SDV" when="21/05/2020" revision="4.00" why="ICD Padrão SDV com funcionalidade Regulação e Temperatura." version="Release SDV" who="Filipe Veronezi" />
-			<Hitem what="SDV" when="02/06/2020" revision="4.02" why="Versão inicial com todos os pontos semelhantes ao TM1 linkados" version="Release SDV" who="Filipe Veronezi" />
+			<Hitem what="SDV" when="21/05/2020" revision="4.00" why="ICD Padrão SDV com funcionalidade Regulação e Temperatura." version="Release SDV" who="Filipe Veronezi"/>
+			<Hitem what="SDV" when="02/06/2020" revision="4.02" why="Versão inicial com todos os pontos semelhantes ao TM1 linkados" version="Release SDV" who="Filipe Veronezi"/>
 		</History>
 	</Header>
 	<Communication>
@@ -61,582 +61,522 @@
 	</Communication>
 	<IED desc="SDV" name="SDV_" type="SDV" manufacturer="Treetech Sistemas Digitais" configVersion="4.02">
 		<Services>
-			<DynAssociation />
-			<ConfLogControl max="10" />
-			<GOOSE max="10" />
-			<GSSE max="10" />
-			<GetDirectory />
-			<GetDataObjectDefinition />
-			<DataObjectDirectory />
-			<GetDataSetValue />
-			<SetDataSetValue />
-			<DataSetDirectory />
-			<ConfDataSet maxAttributes="10" max="14" />
-			<ReadWrite />
-			<TimerActivatedControl />
-			<ConfReportControl max="10" />
-			<GetCBValues />
-			<GSEDir />
-			<FileHandling />
+			<DynAssociation/>
+			<ConfLogControl max="10"/>
+			<GOOSE max="10"/>
+			<GSSE max="10"/>
+			<GetDirectory/>
+			<GetDataObjectDefinition/>
+			<DataObjectDirectory/>
+			<GetDataSetValue/>
+			<SetDataSetValue/>
+			<DataSetDirectory/>
+			<ConfDataSet maxAttributes="10" max="14"/>
+			<ReadWrite/>
+			<TimerActivatedControl/>
+			<ConfReportControl max="10"/>
+			<GetCBValues/>
+			<GSEDir/>
+			<FileHandling/>
 		</Services>
 		<AccessPoint name="SDVIntAP">
 			<Server>
-				<Authentication />
+				<Authentication/>
 				<LDevice desc="TMV_" inst="TMV_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
 					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_0">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly7" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly8" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly9" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly10" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly11" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly12" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly13" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly14" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="PhyHealth" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Ind1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Ind2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="MemErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CfgErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CommErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CommErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="MeaErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TapOpErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TapOpErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1MeaErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1MeaErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1DiagErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1DiagErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2MeaErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2MeaErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2DiagErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2DiagErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTDDiagErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TmpOvErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="VSenErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="VSenOvErr" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly7" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly8" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly9" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly10" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly11" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly12" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly13" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Rly14" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="PhyHealth" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="MemErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CfgErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CommErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="CommErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="MeaErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenErr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="ASenOvErr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TapOpErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TapOpErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1MeaErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1MeaErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1DiagErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD1DiagErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2MeaErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2MeaErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2DiagErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTD2DiagErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="RTDDiagErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="TmpOvErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="HPTmpOvClc3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="VSenErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="LPHD" lnInst="1" doName="VSenOvErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/LPHD1$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 					</LN>
 					<LN lnClass="ATCC" inst="1" lnType="ATCC_TYPE_0">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PwrFactTyp" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="InvPwrFlw" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VChgUp" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VChgDn" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LTCAlm" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="GrCtlV" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParConcID" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LTCBlkAHi" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMstrNet" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParFlwrNet" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMstrRdy" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMMstrNet" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkQty" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="MstrTapPos" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParCommErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ErrPar" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParPrgErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpErr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr4" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr5" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr6" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr6" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PwrFactTyp" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="InvPwrFlw" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VChgUp" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VChgDn" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LTCAlm" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="GrCtlV" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParConcID" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LTCBlkAHi" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMstrNet" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParFlwrNet" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMstrRdy" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParMMstrNet" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkMstr6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkFlwr6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkAuto6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkLoc6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="StBnkOp6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkOpRdy6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkQty" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="MstrTapPos" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkTapPos6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParCommErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ErrPar" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="ParPrgErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpErr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr4" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr5" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhSyncErr6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="BnkSyncErr6" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="TapOpBnkErr6" fc="ST"/>
 						</DataSet>
 						<DataSet name="dsMX" desc="DataSet para FC MX">
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VolDevPct" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Lod" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="CtlV" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LinCtlV" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LodA" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng1" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng2" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng3" fc="MX" />
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="VolDevPct" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="Lod" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="CtlV" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LinCtlV" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="LodA" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng1" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng2" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="ATCC" lnInst="1" doName="PhAng3" fc="MX"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_TMV_/ATCC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX01" desc="Unbuffered Report Control" rptID="SDV_TMV_/ATCC1$RP$ucrbMX01" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_TMV_/ATCC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX02" desc="Unbuffered Report Control" rptID="SDV_TMV_/ATCC1$RP$ucrbMX02" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_TMV_/ATCC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX03" desc="Unbuffered Report Control" rptID="SDV_TMV_/ATCC1$RP$ucrbMX03" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_TMV_/ATCC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX04" desc="Unbuffered Report Control" rptID="SDV_TMV_/ATCC1$RP$ucrbMX04" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="LocSta">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>pO, CUSTA NADA TESTAR CONTIGO TAMBÉM NÉ</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCDragRs1">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCDragRs2">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChg">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="ParConcEna">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlV">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LodA">
 							<DAI name="db">
-								<Val>
-									500
-								</Val>
+								<Val>500</Val>
 							</DAI>
 						</DOI>
 						<DOI name="PhAng">
 							<DAI name="db">
-								<Val>
-									1000
-								</Val>
+								<Val>1000</Val>
 							</DAI>
 						</DOI>
 					</LN>
 					<LN lnClass="MMXN" inst="1" lnType="MMXN_TYPE_0">
 						<DataSet name="dsMX" desc="DataSet para FC MX">
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Watt" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="VolAmpr" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="VolAmp" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Vol" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Amp" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Hz" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="PwrFact" fc="MX" />
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Watt" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="VolAmpr" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="VolAmp" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Vol" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Amp" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="Hz" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="1" doName="PwrFact" fc="MX"/>
 						</DataSet>
 						<ReportControl name="ucrbMX01" desc="Unbuffered Report Control" rptID="SDV_TMV_/MMXN1$RP$ucrbMX01" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX02" desc="Unbuffered Report Control" rptID="SDV_TMV_/MMXN1$RP$ucrbMX02" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX03" desc="Unbuffered Report Control" rptID="SDV_TMV_/MMXN1$RP$ucrbMX03" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX04" desc="Unbuffered Report Control" rptID="SDV_TMV_/MMXN1$RP$ucrbMX04" confRev="1" bufTime="0" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="Watt">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="VolAmpr">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="VolAmp">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Vol">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp">
 							<DAI name="db">
-								<Val>
-									400
-								</Val>
+								<Val>400</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Hz">
 							<DAI name="db">
-								<Val>
-									40
-								</Val>
+								<Val>40</Val>
 							</DAI>
 						</DOI>
 						<DOI name="PwrFact">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 					</LN>
 					<LN lnClass="CCGR" inst="1" lnType="CCGR_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="CECtl" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="StCE" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="Auto" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="CECtl" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="StCE" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="1" doName="Auto" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/CCGR1$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 						<DOI name="Auto">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 					<LN lnClass="CCGR" inst="2" lnType="CCGR_TYPE_1">
 						<DataSet name="dsST">
-							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="2" doName="CECtl" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="2" doName="Auto" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="2" doName="CECtl" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="CCGR" lnInst="2" doName="Auto" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/CCGR2$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 						<DOI name="Auto">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 					<LN lnClass="SIML" inst="1" lnType="SIML_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpAlm" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpTr" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpTrDet" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpAlm" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpTr" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="TmpTrDet" fc="ST"/>
 						</DataSet>
 						<DataSet name="dsMX">
-							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="Tmp" fc="MX" />
+							<FCDA ldInst="TMV_" lnClass="SIML" lnInst="1" doName="Tmp" fc="MX"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/SIML1$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX" rptID="SDV_TMV_/SIML1$ucrbMX" confRev="1" bufTime="1000" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 					</LN>
 					<LN lnClass="SPTR" inst="1" lnType="SPTR_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet1" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet2" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr3" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet3" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet1" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet2" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpAlm3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTr3" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpTrDet3" fc="ST"/>
 						</DataSet>
 						<DataSet name="dsMX">
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc1" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc2" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc3" fc="MX" />
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc1" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc2" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="SPTR" lnInst="1" doName="HPTmpClc3" fc="MX"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/SPTR1$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 						<ReportControl name="ucrbMX" rptID="SDV_TMV_/SPTR1$ucrbMX" confRev="1" bufTime="1000" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 					</LN>
 					<LN lnClass="YPTR" inst="1" lnType="YPTR_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpOvV" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpOvA" fc="ST" />
-							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpUnV" fc="ST" />
+							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpOvV" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpOvA" fc="ST"/>
+							<FCDA ldInst="TMV_" lnClass="YPTR" lnInst="1" doName="OpUnV" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST" rptID="SDV_TMV_/YPTR1$bcrbST" confRev="1" buffered="true" bufTime="1000" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 					</LN>
 					<LN lnClass="MMXN" inst="2" lnType="MMXN_TYPE_1">
 						<DataSet name="dsMX" desc="DataSet para FC MX">
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="RTDTmp1" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="RTDTmp2" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct1" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp1" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct2" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp2" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct3" fc="MX" />
-							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp3" fc="MX" />
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="RTDTmp1" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="RTDTmp2" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct1" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp1" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct2" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp2" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="AmpPct3" fc="MX"/>
+							<FCDA ldInst="TMV_" lnClass="MMXN" lnInst="2" doName="Amp3" fc="MX"/>
 						</DataSet>
 						<ReportControl name="ucrbMX" rptID="SDV_TMV_/MMXN2$ucrbMX" confRev="1" bufTime="1000" datSet="dsMX" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true" />
-							<RptEnabled max="3" />
+							<TrgOps dchg="true" qchg="true" dupd="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" entryID="true" configRef="true"/>
+							<RptEnabled max="3"/>
 						</ReportControl>
 						<DOI name="RTDTmp1">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="RTDTmp2">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct1">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp1">
 							<DAI name="db">
-								<Val>
-									400
-								</Val>
+								<Val>400</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct2">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp2">
 							<DAI name="db">
-								<Val>
-									400
-								</Val>
+								<Val>400</Val>
 							</DAI>
 						</DOI>
 						<DOI name="AmpPct3">
 							<DAI name="db">
-								<Val>
-									200
-								</Val>
+								<Val>200</Val>
 							</DAI>
 						</DOI>
 						<DOI name="Amp3">
 							<DAI name="db">
-								<Val>
-									400
-								</Val>
+								<Val>400</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				
 				<LDevice desc="SPS1_" inst="SPS1_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS1_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS1_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS1_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS1_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS1_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -646,73 +586,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS2_" inst="SPS2_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS2_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS2_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS2_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS2_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS2_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -722,76 +652,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS3_" inst="SPS3_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS3_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS3_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS3_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS3_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS3_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -801,101 +721,83 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS4_" inst="SPS4_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS4_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS4_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS4_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS4_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS4_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -905,73 +807,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS5_" inst="SPS5_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS5_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS5_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS5_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS5_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS5_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -981,76 +873,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS6_" inst="SPS6_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS6_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS6_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS6_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS6_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS6_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1060,101 +942,83 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS7_" inst="SPS7_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS7_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS7_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS7_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS7_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS7_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1164,73 +1028,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS8_" inst="SPS8_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS8_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS8_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS8_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS8_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS8_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1240,76 +1094,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS9_" inst="SPS9_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS9_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS9_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS9_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS9_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS9_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1319,101 +1163,83 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS10_" inst="SPS10_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS10_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS10_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS10_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS10_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS10_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1423,73 +1249,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS11_" inst="SPS11_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST" desc="DataSet para FC ST">
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS11_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS11_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS11_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS11_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS11_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1499,76 +1315,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS12_" inst="SPS12_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS12_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS12_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS12_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS12_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS12_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1578,101 +1384,83 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS13_" inst="SPS13_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS13_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS13_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS13_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS13_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS13_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1682,73 +1470,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS14_" inst="SPS14_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS14_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS14_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS14_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS14_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS14_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1758,76 +1536,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS15_" inst="SPS15_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS15_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS15_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS15_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS15_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS15_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1837,101 +1605,83 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS16_" inst="SPS16_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS16_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS16_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS16_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS16_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS16_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -1941,73 +1691,63 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS17_" inst="SPS17_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_1">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="ParOp" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS17_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS17_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS17_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS17_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS17_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -2017,76 +1757,66 @@
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="IndvPh">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
 				</LDevice>
 				<LDevice desc="SPS18_" inst="SPS18_">
-					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0" />
-					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1" />
+					<LN0 lnClass="LLN0" inst="" lnType="LLN0_TYPE_0"/>
+					<LN lnClass="LPHD" inst="1" lnType="LPHD_TYPE_1"/>
 					<LN lnClass="YLTC" inst="1" lnType="YLTC_TYPE_0">
 						<DataSet name="dsST">
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST" />
-							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST" />
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TapPosInd" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="ParTrfMod" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TapChg" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Loc" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Auto" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="TrfMod" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="RdyChgPos" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="StComm" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Indv" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Mstr" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="Flwr" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PhSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="BnkSyncErr" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PrgErr" fc="ST"/>
+							<FCDA ldInst="SPS18_" lnClass="YLTC" lnInst="1" doName="PosErr" fc="ST"/>
 						</DataSet>
 						<ReportControl name="bcrbST01" desc="Buffered Report Control" rptID="SDV_SPS18_/YLTC1$BR$bcrbST01" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST02" desc="Buffered Report Control" rptID="SDV_SPS18_/YLTC1$BR$bcrbST02" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST03" desc="Buffered Report Control" rptID="SDV_SPS18_/YLTC1$BR$bcrbST03" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<ReportControl name="bcrbST04" desc="Buffered Report Control" rptID="SDV_SPS18_/YLTC1$BR$bcrbST04" confRev="1" buffered="true" bufTime="0" datSet="dsST" intgPd="0">
-							<TrgOps dchg="true" qchg="true" dupd="true" period="true" />
-							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true" />
+							<TrgOps dchg="true" qchg="true" dupd="true" period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="true"/>
 						</ReportControl>
 						<DOI name="TapChg">
 							<DAI name="persistent">
-								<Val>
-									False
-								</Val>
+								<Val>False</Val>
 							</DAI>
 							<DAI name="ctlModel">
 								<Val>
@@ -2096,58 +1826,42 @@
 						</DOI>
 						<DOI name="CtlParTrfMod">
 							<DAI name="setVal">
-								<Val>
-									0
-								</Val>
+								<Val>0</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlFlwr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlMstr">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlIndv">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgR">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="TapChgL">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="CtlLoc">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 						<DOI name="LTCBlk">
 							<DAI name="ctlModel">
-								<Val>
-									direct-with-normal-security
-								</Val>
+								<Val>direct-with-normal-security</Val>
 							</DAI>
 						</DOI>
 					</LN>
@@ -2157,437 +1871,437 @@
 	</IED>
 	<DataTypeTemplates>
 		<LNodeType id="LLN0_TYPE_0" lnClass="LLN0">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS_0" />
-			<DO name="Health" type="INS_1" />
-			<DO name="NamPlt" type="LPL_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Health" type="INS_1"/>
+			<DO name="NamPlt" type="LPL_0"/>
 		</LNodeType>
 		<LNodeType id="LPHD_TYPE_0" lnClass="LPHD">
-			<DO name="Proxy" type="SPS_0" />
-			<DO name="Rly1" type="SPS_0" />
-			<DO name="Rly2" type="SPS_0" />
-			<DO name="Rly3" type="SPS_0" />
-			<DO name="Rly4" type="SPS_0" />
-			<DO name="Rly5" type="SPS_0" />
-			<DO name="Rly6" type="SPS_0" />
-			<DO name="Rly7" type="SPS_0" />
-			<DO name="Rly8" type="SPS_0" />
-			<DO name="Rly9" type="SPS_0" />
-			<DO name="Rly10" type="SPS_0" />
-			<DO name="Rly11" type="SPS_0" />
-			<DO name="Rly12" type="SPS_0" />
-			<DO name="Rly13" type="SPS_0" />
-			<DO name="Rly14" type="SPS_0" />
-			<DO name="PhyHealth" type="INS_3" />
-			<DO name="Ind1" type="SPS_0" />
-			<DO name="Ind2" type="SPS_0" />
-			<DO name="MemErr" type="SPS_0" />
-			<DO name="CfgErr" type="SPS_0" />
-			<DO name="CommErr1" type="SPS_0" />
-			<DO name="CommErr2" type="SPS_0" />
-			<DO name="MeaErr" type="SPS_0" />
-			<DO name="ASenErr1" type="SPS_0" />
-			<DO name="ASenOvErr1" type="SPS_0" />
-			<DO name="ASenErr2" type="SPS_0" />
-			<DO name="ASenOvErr2" type="SPS_0" />
-			<DO name="ASenErr3" type="SPS_0" />
-			<DO name="ASenOvErr3" type="SPS_0" />
-			<DO name="TapOpErr1" type="SPS_0" />
-			<DO name="TapOpErr2" type="SPS_0" />
-			<DO name="RTDMeaErr" type="SPS_0" />
-			<DO name="RTD1MeaErr1" type="SPS_0" />
-			<DO name="RTD1MeaErr2" type="SPS_0" />
-			<DO name="RTD1DiagErr1" type="SPS_0" />
-			<DO name="RTD1DiagErr2" type="SPS_0" />
-			<DO name="RTD2MeaErr1" type="SPS_0" />
-			<DO name="RTD2MeaErr2" type="SPS_0" />
-			<DO name="RTD2DiagErr1" type="SPS_0" />
-			<DO name="RTD2DiagErr2" type="SPS_0" />
-			<DO name="RTDDiagErr" type="SPS_0" />
-			<DO name="TmpOvErr" type="SPS_0" />
-			<DO name="HPTmpOvClc1" type="SPS_0" />
-			<DO name="HPTmpOvClc2" type="SPS_0" />
-			<DO name="HPTmpOvClc3" type="SPS_0" />
-			<DO name="VSenErr" type="SPS_0" />
-			<DO name="VSenOvErr" type="SPS_0" />
-			<DO name="PhyNam" type="DPL_0" />
+			<DO name="Proxy" type="SPS_0"/>
+			<DO name="Rly1" type="SPS_0"/>
+			<DO name="Rly2" type="SPS_0"/>
+			<DO name="Rly3" type="SPS_0"/>
+			<DO name="Rly4" type="SPS_0"/>
+			<DO name="Rly5" type="SPS_0"/>
+			<DO name="Rly6" type="SPS_0"/>
+			<DO name="Rly7" type="SPS_0"/>
+			<DO name="Rly8" type="SPS_0"/>
+			<DO name="Rly9" type="SPS_0"/>
+			<DO name="Rly10" type="SPS_0"/>
+			<DO name="Rly11" type="SPS_0"/>
+			<DO name="Rly12" type="SPS_0"/>
+			<DO name="Rly13" type="SPS_0"/>
+			<DO name="Rly14" type="SPS_0"/>
+			<DO name="PhyHealth" type="INS_3"/>
+			<DO name="Ind1" type="SPS_0"/>
+			<DO name="Ind2" type="SPS_0"/>
+			<DO name="MemErr" type="SPS_0"/>
+			<DO name="CfgErr" type="SPS_0"/>
+			<DO name="CommErr1" type="SPS_0"/>
+			<DO name="CommErr2" type="SPS_0"/>
+			<DO name="MeaErr" type="SPS_0"/>
+			<DO name="ASenErr1" type="SPS_0"/>
+			<DO name="ASenOvErr1" type="SPS_0"/>
+			<DO name="ASenErr2" type="SPS_0"/>
+			<DO name="ASenOvErr2" type="SPS_0"/>
+			<DO name="ASenErr3" type="SPS_0"/>
+			<DO name="ASenOvErr3" type="SPS_0"/>
+			<DO name="TapOpErr1" type="SPS_0"/>
+			<DO name="TapOpErr2" type="SPS_0"/>
+			<DO name="RTDMeaErr" type="SPS_0"/>
+			<DO name="RTD1MeaErr1" type="SPS_0"/>
+			<DO name="RTD1MeaErr2" type="SPS_0"/>
+			<DO name="RTD1DiagErr1" type="SPS_0"/>
+			<DO name="RTD1DiagErr2" type="SPS_0"/>
+			<DO name="RTD2MeaErr1" type="SPS_0"/>
+			<DO name="RTD2MeaErr2" type="SPS_0"/>
+			<DO name="RTD2DiagErr1" type="SPS_0"/>
+			<DO name="RTD2DiagErr2" type="SPS_0"/>
+			<DO name="RTDDiagErr" type="SPS_0"/>
+			<DO name="TmpOvErr" type="SPS_0"/>
+			<DO name="HPTmpOvClc1" type="SPS_0"/>
+			<DO name="HPTmpOvClc2" type="SPS_0"/>
+			<DO name="HPTmpOvClc3" type="SPS_0"/>
+			<DO name="VSenErr" type="SPS_0"/>
+			<DO name="VSenOvErr" type="SPS_0"/>
+			<DO name="PhyNam" type="DPL_0"/>
 		</LNodeType>
 		<LNodeType id="ATCC_TYPE_0" lnClass="ATCC">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS_0" />
-			<DO name="Health" type="INS_1" />
-			<DO name="NamPlt" type="LPL_0" />
-			<DO name="Auto" type="SPS_0" />
-			<DO name="TapPosInd" type="INS_2" />
-			<DO name="LoTapPos" type="INS_2" />
-			<DO name="HiTapPos" type="INS_2" />
-			<DO name="PwrFactTyp" type="SPS_0" />
-			<DO name="InvPwrFlw" type="SPS_0" />
-			<DO name="VChgUp" type="SPS_0" />
-			<DO name="VChgDn" type="SPS_0" />
-			<DO name="LTCAlm" type="SPS_0" />
-			<DO name="VolDevPct" type="MV_0" />
-			<DO name="Lod" type="MV_0" />
-			<DO name="PhAng" type="MV_0" />
-			<DO name="CtlV" type="MV_0" />
-			<DO name="LinCtlV" type="MV_0" />
-			<DO name="LodA" type="MV_0" />
-			<DO name="PhAng1" type="MV_0" />
-			<DO name="PhAng2" type="MV_0" />
-			<DO name="PhAng3" type="MV_0" />
-			<DO name="GrCtlV" type="SPS_0" />
-			<DO name="ParConcID" type="INS_2" />
-			<DO name="LTCBlkAHi" type="SPS_0" />
-			<DO name="LocSta" type="SPC_0" />
-			<DO name="Loc" type="SPS_0" />
-			<DO name="LTCBlk" type="SPC_0" />
-			<DO name="LTCDragRs1" type="SPC_0" />
-			<DO name="LTCDragRs2" type="SPC_0" />
-			<DO name="TapChgL" type="SPC_0" />
-			<DO name="TapChgR" type="SPC_0" />
-			<DO name="TapChg" type="BSC_0" />
-			<DO name="ParConcEna" type="SPC_0" />
-			<DO name="ParMstrNet" type="SPS_0" />
-			<DO name="ParFlwrNet" type="SPS_0" />
-			<DO name="ParMstrRdy" type="SPS_0" />
-			<DO name="ParMMstrNet" type="SPS_0" />
-			<DO name="BnkMstr1" type="SPS_0" />
-			<DO name="BnkFlwr1" type="SPS_0" />
-			<DO name="BnkAuto1" type="SPS_0" />
-			<DO name="BnkLoc1" type="SPS_0" />
-			<DO name="StBnkOp1" type="SPS_0" />
-			<DO name="BnkOpRdy1" type="SPS_0" />
-			<DO name="BnkMstr2" type="SPS_0" />
-			<DO name="BnkFlwr2" type="SPS_0" />
-			<DO name="BnkAuto2" type="SPS_0" />
-			<DO name="BnkLoc2" type="SPS_0" />
-			<DO name="StBnkOp2" type="SPS_0" />
-			<DO name="BnkOpRdy2" type="SPS_0" />
-			<DO name="BnkMstr3" type="SPS_0" />
-			<DO name="BnkFlwr3" type="SPS_0" />
-			<DO name="BnkAuto3" type="SPS_0" />
-			<DO name="BnkLoc3" type="SPS_0" />
-			<DO name="StBnkOp3" type="SPS_0" />
-			<DO name="BnkOpRdy3" type="SPS_0" />
-			<DO name="BnkMstr4" type="SPS_0" />
-			<DO name="BnkFlwr4" type="SPS_0" />
-			<DO name="BnkAuto4" type="SPS_0" />
-			<DO name="BnkLoc4" type="SPS_0" />
-			<DO name="StBnkOp4" type="SPS_0" />
-			<DO name="BnkOpRdy4" type="SPS_0" />
-			<DO name="BnkMstr5" type="SPS_0" />
-			<DO name="BnkFlwr5" type="SPS_0" />
-			<DO name="BnkAuto5" type="SPS_0" />
-			<DO name="BnkLoc5" type="SPS_0" />
-			<DO name="StBnkOp5" type="SPS_0" />
-			<DO name="BnkOpRdy5" type="SPS_0" />
-			<DO name="BnkMstr6" type="SPS_0" />
-			<DO name="BnkFlwr6" type="SPS_0" />
-			<DO name="BnkAuto6" type="SPS_0" />
-			<DO name="BnkLoc6" type="SPS_0" />
-			<DO name="StBnkOp6" type="SPS_0" />
-			<DO name="BnkOpRdy6" type="SPS_0" />
-			<DO name="BnkQty" type="INS_2" />
-			<DO name="MstrTapPos" type="INS_2" />
-			<DO name="BnkTapPos1" type="INS_2" />
-			<DO name="BnkTapPos2" type="INS_2" />
-			<DO name="BnkTapPos3" type="INS_2" />
-			<DO name="BnkTapPos4" type="INS_2" />
-			<DO name="BnkTapPos5" type="INS_2" />
-			<DO name="BnkTapPos6" type="INS_2" />
-			<DO name="ParCommErr" type="SPS_0" />
-			<DO name="ErrPar" type="SPS_0" />
-			<DO name="ParPrgErr" type="SPS_0" />
-			<DO name="TapOpErr" type="SPS_0" />
-			<DO name="PhSyncErr1" type="SPS_0" />
-			<DO name="BnkSyncErr1" type="SPS_0" />
-			<DO name="TapOpBnkErr1" type="SPS_0" />
-			<DO name="PhSyncErr2" type="SPS_0" />
-			<DO name="BnkSyncErr2" type="SPS_0" />
-			<DO name="TapOpBnkErr2" type="SPS_0" />
-			<DO name="PhSyncErr3" type="SPS_0" />
-			<DO name="BnkSyncErr3" type="SPS_0" />
-			<DO name="TapOpBnkErr3" type="SPS_0" />
-			<DO name="PhSyncErr4" type="SPS_0" />
-			<DO name="BnkSyncErr4" type="SPS_0" />
-			<DO name="TapOpBnkErr4" type="SPS_0" />
-			<DO name="PhSyncErr5" type="SPS_0" />
-			<DO name="BnkSyncErr5" type="SPS_0" />
-			<DO name="TapOpBnkErr5" type="SPS_0" />
-			<DO name="PhSyncErr6" type="SPS_0" />
-			<DO name="BnkSyncErr6" type="SPS_0" />
-			<DO name="TapOpBnkErr6" type="SPS_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Health" type="INS_1"/>
+			<DO name="NamPlt" type="LPL_0"/>
+			<DO name="Auto" type="SPS_0"/>
+			<DO name="TapPosInd" type="INS_2"/>
+			<DO name="LoTapPos" type="INS_2"/>
+			<DO name="HiTapPos" type="INS_2"/>
+			<DO name="PwrFactTyp" type="SPS_0"/>
+			<DO name="InvPwrFlw" type="SPS_0"/>
+			<DO name="VChgUp" type="SPS_0"/>
+			<DO name="VChgDn" type="SPS_0"/>
+			<DO name="LTCAlm" type="SPS_0"/>
+			<DO name="VolDevPct" type="MV_0"/>
+			<DO name="Lod" type="MV_0"/>
+			<DO name="PhAng" type="MV_0"/>
+			<DO name="CtlV" type="MV_0"/>
+			<DO name="LinCtlV" type="MV_0"/>
+			<DO name="LodA" type="MV_0"/>
+			<DO name="PhAng1" type="MV_0"/>
+			<DO name="PhAng2" type="MV_0"/>
+			<DO name="PhAng3" type="MV_0"/>
+			<DO name="GrCtlV" type="SPS_0"/>
+			<DO name="ParConcID" type="INS_2"/>
+			<DO name="LTCBlkAHi" type="SPS_0"/>
+			<DO name="LocSta" type="SPC_0"/>
+			<DO name="Loc" type="SPS_0"/>
+			<DO name="LTCBlk" type="SPC_0"/>
+			<DO name="LTCDragRs1" type="SPC_0"/>
+			<DO name="LTCDragRs2" type="SPC_0"/>
+			<DO name="TapChgL" type="SPC_0"/>
+			<DO name="TapChgR" type="SPC_0"/>
+			<DO name="TapChg" type="BSC_0"/>
+			<DO name="ParConcEna" type="SPC_0"/>
+			<DO name="ParMstrNet" type="SPS_0"/>
+			<DO name="ParFlwrNet" type="SPS_0"/>
+			<DO name="ParMstrRdy" type="SPS_0"/>
+			<DO name="ParMMstrNet" type="SPS_0"/>
+			<DO name="BnkMstr1" type="SPS_0"/>
+			<DO name="BnkFlwr1" type="SPS_0"/>
+			<DO name="BnkAuto1" type="SPS_0"/>
+			<DO name="BnkLoc1" type="SPS_0"/>
+			<DO name="StBnkOp1" type="SPS_0"/>
+			<DO name="BnkOpRdy1" type="SPS_0"/>
+			<DO name="BnkMstr2" type="SPS_0"/>
+			<DO name="BnkFlwr2" type="SPS_0"/>
+			<DO name="BnkAuto2" type="SPS_0"/>
+			<DO name="BnkLoc2" type="SPS_0"/>
+			<DO name="StBnkOp2" type="SPS_0"/>
+			<DO name="BnkOpRdy2" type="SPS_0"/>
+			<DO name="BnkMstr3" type="SPS_0"/>
+			<DO name="BnkFlwr3" type="SPS_0"/>
+			<DO name="BnkAuto3" type="SPS_0"/>
+			<DO name="BnkLoc3" type="SPS_0"/>
+			<DO name="StBnkOp3" type="SPS_0"/>
+			<DO name="BnkOpRdy3" type="SPS_0"/>
+			<DO name="BnkMstr4" type="SPS_0"/>
+			<DO name="BnkFlwr4" type="SPS_0"/>
+			<DO name="BnkAuto4" type="SPS_0"/>
+			<DO name="BnkLoc4" type="SPS_0"/>
+			<DO name="StBnkOp4" type="SPS_0"/>
+			<DO name="BnkOpRdy4" type="SPS_0"/>
+			<DO name="BnkMstr5" type="SPS_0"/>
+			<DO name="BnkFlwr5" type="SPS_0"/>
+			<DO name="BnkAuto5" type="SPS_0"/>
+			<DO name="BnkLoc5" type="SPS_0"/>
+			<DO name="StBnkOp5" type="SPS_0"/>
+			<DO name="BnkOpRdy5" type="SPS_0"/>
+			<DO name="BnkMstr6" type="SPS_0"/>
+			<DO name="BnkFlwr6" type="SPS_0"/>
+			<DO name="BnkAuto6" type="SPS_0"/>
+			<DO name="BnkLoc6" type="SPS_0"/>
+			<DO name="StBnkOp6" type="SPS_0"/>
+			<DO name="BnkOpRdy6" type="SPS_0"/>
+			<DO name="BnkQty" type="INS_2"/>
+			<DO name="MstrTapPos" type="INS_2"/>
+			<DO name="BnkTapPos1" type="INS_2"/>
+			<DO name="BnkTapPos2" type="INS_2"/>
+			<DO name="BnkTapPos3" type="INS_2"/>
+			<DO name="BnkTapPos4" type="INS_2"/>
+			<DO name="BnkTapPos5" type="INS_2"/>
+			<DO name="BnkTapPos6" type="INS_2"/>
+			<DO name="ParCommErr" type="SPS_0"/>
+			<DO name="ErrPar" type="SPS_0"/>
+			<DO name="ParPrgErr" type="SPS_0"/>
+			<DO name="TapOpErr" type="SPS_0"/>
+			<DO name="PhSyncErr1" type="SPS_0"/>
+			<DO name="BnkSyncErr1" type="SPS_0"/>
+			<DO name="TapOpBnkErr1" type="SPS_0"/>
+			<DO name="PhSyncErr2" type="SPS_0"/>
+			<DO name="BnkSyncErr2" type="SPS_0"/>
+			<DO name="TapOpBnkErr2" type="SPS_0"/>
+			<DO name="PhSyncErr3" type="SPS_0"/>
+			<DO name="BnkSyncErr3" type="SPS_0"/>
+			<DO name="TapOpBnkErr3" type="SPS_0"/>
+			<DO name="PhSyncErr4" type="SPS_0"/>
+			<DO name="BnkSyncErr4" type="SPS_0"/>
+			<DO name="TapOpBnkErr4" type="SPS_0"/>
+			<DO name="PhSyncErr5" type="SPS_0"/>
+			<DO name="BnkSyncErr5" type="SPS_0"/>
+			<DO name="TapOpBnkErr5" type="SPS_0"/>
+			<DO name="PhSyncErr6" type="SPS_0"/>
+			<DO name="BnkSyncErr6" type="SPS_0"/>
+			<DO name="TapOpBnkErr6" type="SPS_0"/>
 		</LNodeType>
 		<LNodeType id="MMXN_TYPE_0" lnClass="MMXN">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS_0" />
-			<DO name="Health" type="INS_1" />
-			<DO name="NamPlt" type="LPL_0" />
-			<DO name="Watt" type="MV_0" />
-			<DO name="VolAmpr" type="MV_0" />
-			<DO name="VolAmp" type="MV_0" />
-			<DO name="Vol" type="MV_0" />
-			<DO name="Amp" type="MV_0" />
-			<DO name="Hz" type="MV_0" />
-			<DO name="PwrFact" type="MV_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Health" type="INS_1"/>
+			<DO name="NamPlt" type="LPL_0"/>
+			<DO name="Watt" type="MV_0"/>
+			<DO name="VolAmpr" type="MV_0"/>
+			<DO name="VolAmp" type="MV_0"/>
+			<DO name="Vol" type="MV_0"/>
+			<DO name="Amp" type="MV_0"/>
+			<DO name="Hz" type="MV_0"/>
+			<DO name="PwrFact" type="MV_0"/>
 		</LNodeType>
 		<LNodeType id="MMXN_TYPE_1" lnClass="MMXN">
-			<DO name="Beh" type="INS_0" />
-			<DO name="RTDTmp1" type="MV_0" />
-			<DO name="RTDTmp2" type="MV_0" />
-			<DO name="AmpPct1" type="MV_0" />
-			<DO name="Amp1" type="MV_0" />
-			<DO name="AmpPct2" type="MV_0" />
-			<DO name="Amp2" type="MV_0" />
-			<DO name="AmpPct3" type="MV_0" />
-			<DO name="Amp3" type="MV_0" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="RTDTmp1" type="MV_0"/>
+			<DO name="RTDTmp2" type="MV_0"/>
+			<DO name="AmpPct1" type="MV_0"/>
+			<DO name="Amp1" type="MV_0"/>
+			<DO name="AmpPct2" type="MV_0"/>
+			<DO name="Amp2" type="MV_0"/>
+			<DO name="AmpPct3" type="MV_0"/>
+			<DO name="Amp3" type="MV_0"/>
 		</LNodeType>
 		<LNodeType id="LPHD_TYPE_1" lnClass="LPHD">
-			<DO name="PhyNam" type="DPL_0" />
-			<DO name="PhyHealth" type="INS_3" />
-			<DO name="Proxy" type="SPS_0" />
+			<DO name="PhyNam" type="DPL_0"/>
+			<DO name="PhyHealth" type="INS_3"/>
+			<DO name="Proxy" type="SPS_0"/>
 		</LNodeType>
 		<LNodeType id="YLTC_TYPE_0" lnClass="YLTC">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS_0" />
-			<DO name="Health" type="INS_1" />
-			<DO name="NamPlt" type="LPL_0" />
-			<DO name="TapPosInd" type="INS_2" />
-			<DO name="ParTrfMod" type="INS_4" />
-			<DO name="Loc" type="SPS_0" />
-			<DO name="Auto" type="SPS_0" />
-			<DO name="TrfMod" type="SPS_0" />
-			<DO name="RdyChgPos" type="SPS_0" />
-			<DO name="StComm" type="SPS_0" />
-			<DO name="Indv" type="SPS_0" />
-			<DO name="Mstr" type="SPS_0" />
-			<DO name="Flwr" type="SPS_0" />
-			<DO name="PhSyncErr" type="SPS_0" />
-			<DO name="BnkSyncErr" type="SPS_0" />
-			<DO name="PrgErr" type="SPS_0" />
-			<DO name="PosErr" type="SPS_0" />
-			<DO name="LTCBlk" type="SPC_0" />
-			<DO name="CtlLoc" type="SPC_0" />
-			<DO name="TapChgL" type="SPC_0" />
-			<DO name="TapChgR" type="SPC_0" />
-			<DO name="CtlIndv" type="SPC_0" />
-			<DO name="CtlMstr" type="SPC_0" />
-			<DO name="CtlFlwr" type="SPC_0" />
-			<DO name="CtlParTrfMod" type="ING_0" />
-			<DO name="TapChg" type="BSC_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Health" type="INS_1"/>
+			<DO name="NamPlt" type="LPL_0"/>
+			<DO name="TapPosInd" type="INS_2"/>
+			<DO name="ParTrfMod" type="INS_4"/>
+			<DO name="Loc" type="SPS_0"/>
+			<DO name="Auto" type="SPS_0"/>
+			<DO name="TrfMod" type="SPS_0"/>
+			<DO name="RdyChgPos" type="SPS_0"/>
+			<DO name="StComm" type="SPS_0"/>
+			<DO name="Indv" type="SPS_0"/>
+			<DO name="Mstr" type="SPS_0"/>
+			<DO name="Flwr" type="SPS_0"/>
+			<DO name="PhSyncErr" type="SPS_0"/>
+			<DO name="BnkSyncErr" type="SPS_0"/>
+			<DO name="PrgErr" type="SPS_0"/>
+			<DO name="PosErr" type="SPS_0"/>
+			<DO name="LTCBlk" type="SPC_0"/>
+			<DO name="CtlLoc" type="SPC_0"/>
+			<DO name="TapChgL" type="SPC_0"/>
+			<DO name="TapChgR" type="SPC_0"/>
+			<DO name="CtlIndv" type="SPC_0"/>
+			<DO name="CtlMstr" type="SPC_0"/>
+			<DO name="CtlFlwr" type="SPC_0"/>
+			<DO name="CtlParTrfMod" type="ING_0"/>
+			<DO name="TapChg" type="BSC_0"/>
 		</LNodeType>
 		<LNodeType id="YLTC_TYPE_1" lnClass="YLTC">
-			<DO name="Mod" type="INC_0" />
-			<DO name="Beh" type="INS_0" />
-			<DO name="Health" type="INS_1" />
-			<DO name="NamPlt" type="LPL_0" />
-			<DO name="TapPosInd" type="INS_2" />
-			<DO name="Loc" type="SPS_0" />
-			<DO name="Auto" type="SPS_0" />
-			<DO name="ParOp" type="SPS_0" />
-			<DO name="TrfMod" type="SPS_0" />
-			<DO name="RdyChgPos" type="SPS_0" />
-			<DO name="StComm" type="SPS_0" />
-			<DO name="PhSyncErr" type="SPS_0" />
-			<DO name="BnkSyncErr" type="SPS_0" />
-			<DO name="PrgErr" type="SPS_0" />
-			<DO name="PosErr" type="SPS_0" />
-			<DO name="IndvPh" type="SPC_0" />
-			<DO name="CtlLoc" type="SPC_0" />
-			<DO name="TapChgL" type="SPC_0" />
-			<DO name="TapChgR" type="SPC_0" />
-			<DO name="TapChg" type="BSC_0" />
+			<DO name="Mod" type="INC_0"/>
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Health" type="INS_1"/>
+			<DO name="NamPlt" type="LPL_0"/>
+			<DO name="TapPosInd" type="INS_2"/>
+			<DO name="Loc" type="SPS_0"/>
+			<DO name="Auto" type="SPS_0"/>
+			<DO name="ParOp" type="SPS_0"/>
+			<DO name="TrfMod" type="SPS_0"/>
+			<DO name="RdyChgPos" type="SPS_0"/>
+			<DO name="StComm" type="SPS_0"/>
+			<DO name="PhSyncErr" type="SPS_0"/>
+			<DO name="BnkSyncErr" type="SPS_0"/>
+			<DO name="PrgErr" type="SPS_0"/>
+			<DO name="PosErr" type="SPS_0"/>
+			<DO name="IndvPh" type="SPC_0"/>
+			<DO name="CtlLoc" type="SPC_0"/>
+			<DO name="TapChgL" type="SPC_0"/>
+			<DO name="TapChgR" type="SPC_0"/>
+			<DO name="TapChg" type="BSC_0"/>
 		</LNodeType>
 		<LNodeType id="CCGR_TYPE_0" lnClass="CCGR">
-			<DO name="Beh" type="INS_0" />
-			<DO name="CECtl" type="SPS_0" />
-			<DO name="StCE" type="SPS_0" />
-			<DO name="Auto" type="SPC_1" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="CECtl" type="SPS_0"/>
+			<DO name="StCE" type="SPS_0"/>
+			<DO name="Auto" type="SPC_1"/>
 		</LNodeType>
 		<LNodeType id="CCGR_TYPE_1" lnClass="CCGR">
-			<DO name="Beh" type="INS_0" />
-			<DO name="CECtl" type="SPS_0" />
-			<DO name="Auto" type="SPC_1" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="CECtl" type="SPS_0"/>
+			<DO name="Auto" type="SPC_1"/>
 		</LNodeType>
 		<LNodeType id="SIML_TYPE_0" lnClass="SIML">
-			<DO name="Beh" type="INS_0" />
-			<DO name="Tmp" type="MV_0" />
-			<DO name="TmpAlm" type="SPS_0" />
-			<DO name="TmpTr" type="SPS_0" />
-			<DO name="TmpTrDet" type="SPS_0" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="Tmp" type="MV_0"/>
+			<DO name="TmpAlm" type="SPS_0"/>
+			<DO name="TmpTr" type="SPS_0"/>
+			<DO name="TmpTrDet" type="SPS_0"/>
 		</LNodeType>
 		<LNodeType id="SPTR_TYPE_0" lnClass="SPTR">
-			<DO name="Beh" type="INS_0" />
-			<DO name="HPTmpClc1" type="MV_0" />
-			<DO name="HPTmpAlm1" type="SPS_0" />
-			<DO name="HPTmpTr1" type="SPS_0" />
-			<DO name="HPTmpTrDet1" type="SPS_0" />
-			<DO name="HPTmpClc2" type="MV_0" />
-			<DO name="HPTmpAlm2" type="SPS_0" />
-			<DO name="HPTmpTr2" type="SPS_0" />
-			<DO name="HPTmpTrDet2" type="SPS_0" />
-			<DO name="HPTmpClc3" type="MV_0" />
-			<DO name="HPTmpAlm3" type="SPS_0" />
-			<DO name="HPTmpTr3" type="SPS_0" />
-			<DO name="HPTmpTrDet3" type="SPS_0" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="HPTmpClc1" type="MV_0"/>
+			<DO name="HPTmpAlm1" type="SPS_0"/>
+			<DO name="HPTmpTr1" type="SPS_0"/>
+			<DO name="HPTmpTrDet1" type="SPS_0"/>
+			<DO name="HPTmpClc2" type="MV_0"/>
+			<DO name="HPTmpAlm2" type="SPS_0"/>
+			<DO name="HPTmpTr2" type="SPS_0"/>
+			<DO name="HPTmpTrDet2" type="SPS_0"/>
+			<DO name="HPTmpClc3" type="MV_0"/>
+			<DO name="HPTmpAlm3" type="SPS_0"/>
+			<DO name="HPTmpTr3" type="SPS_0"/>
+			<DO name="HPTmpTrDet3" type="SPS_0"/>
 		</LNodeType>
 		<LNodeType id="YPTR_TYPE_0" lnClass="YPTR">
-			<DO name="Beh" type="INS_0" />
-			<DO name="OpOvV" type="SPS_0" />
-			<DO name="OpOvA" type="SPS_0" />
-			<DO name="OpUnV" type="SPS_0" />
+			<DO name="Beh" type="INS_0"/>
+			<DO name="OpOvV" type="SPS_0"/>
+			<DO name="OpOvA" type="SPS_0"/>
+			<DO name="OpUnV" type="SPS_0"/>
 		</LNodeType>
 		<DOType id="INC_0" cdc="INC">
-			<DA name="stVal" bType="Enum" type="Mod" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF" />
+			<DA name="stVal" bType="Enum" type="Mod" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
 		</DOType>
 		<DOType id="INS_0" cdc="INS">
-			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="INS_1" cdc="INS">
-			<DA name="stVal" bType="Enum" type="Health" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="Enum" type="Health" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="INS_2" cdc="INS">
-			<DA name="stVal" bType="INT32" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="INT32" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="INS_3" cdc="INS">
-			<DA name="stVal" bType="INT8" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="INT8" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="INS_4" cdc="INS">
-			<DA name="stVal" bType="Enum" type="ParallelTransfModeKind" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="Enum" type="ParallelTransfModeKind" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="ING_64" cdc="ING">
-			<DA name="setVal" bType="INT32" fc="SP" />
+			<DA name="setVal" bType="INT32" fc="SP"/>
 		</DOType>
 		<DOType id="LPL_0" cdc="LPL">
-			<DA name="vendor" bType="VisString255" fc="DC" />
-			<DA name="swRev" bType="VisString255" fc="DC" />
-			<DA name="d" bType="VisString255" fc="DC" />
+			<DA name="vendor" bType="VisString255" fc="DC"/>
+			<DA name="swRev" bType="VisString255" fc="DC"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="DPL_0" cdc="DPL">
-			<DA name="vendor" bType="VisString255" fc="DC" />
-			<DA name="model" bType="VisString255" fc="DC" />
-			<DA name="serNum" bType="VisString255" fc="DC" />
-			<DA name="swRev1" bType="VisString255" fc="DC" />
-			<DA name="swRev2" bType="VisString255" fc="DC" />
-			<DA name="swRev3" bType="VisString255" fc="DC" />
-			<DA name="swRev4" bType="VisString255" fc="DC" />
-			<DA name="swRev5" bType="VisString255" fc="DC" />
-			<DA name="swRev6" bType="VisString255" fc="DC" />
-			<DA name="swRev7" bType="VisString255" fc="DC" />
-			<DA name="swRev8" bType="VisString255" fc="DC" />
-			<DA name="hwRev1" bType="VisString255" fc="DC" />
-			<DA name="hwRev2" bType="VisString255" fc="DC" />
+			<DA name="vendor" bType="VisString255" fc="DC"/>
+			<DA name="model" bType="VisString255" fc="DC"/>
+			<DA name="serNum" bType="VisString255" fc="DC"/>
+			<DA name="swRev1" bType="VisString255" fc="DC"/>
+			<DA name="swRev2" bType="VisString255" fc="DC"/>
+			<DA name="swRev3" bType="VisString255" fc="DC"/>
+			<DA name="swRev4" bType="VisString255" fc="DC"/>
+			<DA name="swRev5" bType="VisString255" fc="DC"/>
+			<DA name="swRev6" bType="VisString255" fc="DC"/>
+			<DA name="swRev7" bType="VisString255" fc="DC"/>
+			<DA name="swRev8" bType="VisString255" fc="DC"/>
+			<DA name="hwRev1" bType="VisString255" fc="DC"/>
+			<DA name="hwRev2" bType="VisString255" fc="DC"/>
 		</DOType>
 		<DOType id="SPS_0" cdc="SPS">
-			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="SPC_0" cdc="SPC">
-			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF" />
-			<DA name="Oper" bType="Struct" type="OperBool" fc="CO" />
-			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
+			<DA name="Oper" bType="Struct" type="OperBool" fc="CO"/>
+			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="SPC_1" cdc="SPC">
-			<DA name="ctlNum" bType="INT8U" fc="CO" />
-			<DA name="origin" bType="Struct" type="Originator" fc="CO" />
-			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF" />
-			<DA name="Oper" bType="Struct" type="OperBool" fc="CO" />
-			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
+			<DA name="ctlNum" bType="INT8U" fc="CO"/>
+			<DA name="origin" bType="Struct" type="Originator" fc="CO"/>
+			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
+			<DA name="Oper" bType="Struct" type="OperBool" fc="CO"/>
+			<DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
 		</DOType>
 		<DOType id="SPG_0" cdc="SPG">
-			<DA name="setVal" bType="BOOLEAN" fc="SP" dchg="true" />
+			<DA name="setVal" bType="BOOLEAN" fc="SP" dchg="true"/>
 		</DOType>
 		<DOType id="SPG_1" cdc="SPG">
-			<DA name="setVal" bType="FLOAT32" fc="SP" dchg="true" />
+			<DA name="setVal" bType="FLOAT32" fc="SP" dchg="true"/>
 		</DOType>
 		<DOType id="MV_0" cdc="MV">
-			<DA name="instMag" bType="Struct" type="AnalogueValue_0" fc="MX" />
-			<DA name="mag" bType="Struct" type="AnalogueValue_0" fc="MX" dchg="true" />
-			<DA name="q" bType="Quality" fc="MX" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="MX" />
-			<DA name="db" bType="INT32U" fc="CF" />
+			<DA name="instMag" bType="Struct" type="AnalogueValue_0" fc="MX"/>
+			<DA name="mag" bType="Struct" type="AnalogueValue_0" fc="MX" dchg="true"/>
+			<DA name="q" bType="Quality" fc="MX" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="MX"/>
+			<DA name="db" bType="INT32U" fc="CF"/>
 		</DOType>
 		<DOType id="MV_1" cdc="MV">
-			<DA name="mag" bType="Struct" type="AnalogueValue_0" fc="MX" dchg="true" />
-			<DA name="q" bType="Quality" fc="MX" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="MX" />
+			<DA name="mag" bType="Struct" type="AnalogueValue_0" fc="MX" dchg="true"/>
+			<DA name="q" bType="Quality" fc="MX" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="MX"/>
 		</DOType>
 		<DOType id="DPC_0" cdc="DPC">
-			<DA name="stVal" bType="Dbpos" type="Dbpos" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF" />
-			<DA name="Oper" bType="Struct" type="OperBool" fc="CO" />
+			<DA name="stVal" bType="Dbpos" type="Dbpos" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF"/>
+			<DA name="Oper" bType="Struct" type="OperBool" fc="CO"/>
 		</DOType>
 		<DOType id="BSC_0" cdc="BSC">
-			<DA name="Oper" bType="Struct" type="OperTcmd" fc="CO" />
-			<DA name="valWTr" bType="Struct" type="ValWithTrans" fc="ST" dchg="true" />
-			<DA name="q" bType="Quality" fc="ST" qchg="true" />
-			<DA name="t" bType="Timestamp" fc="ST" />
-			<DA name="persistent" bType="BOOLEAN" fc="CF" />
-			<DA name="ctlModel" bType="Enum" type="CtlModelKind" fc="CF" />
+			<DA name="Oper" bType="Struct" type="OperTcmd" fc="CO"/>
+			<DA name="valWTr" bType="Struct" type="ValWithTrans" fc="ST" dchg="true"/>
+			<DA name="q" bType="Quality" fc="ST" qchg="true"/>
+			<DA name="t" bType="Timestamp" fc="ST"/>
+			<DA name="persistent" bType="BOOLEAN" fc="CF"/>
+			<DA name="ctlModel" bType="Enum" type="CtlModelKind" fc="CF"/>
 		</DOType>
 		<DOType id="ING_0" cdc="ING">
-			<DA name="setVal" bType="Enum" type="ParallelTransfModeKind" fc="SP" />
-			<DA name="d" bType="VisString255" fc="DC" />
-			<DA name="dU" bType="Unicode255" fc="DC" />
-			<DA name="cdcNs" bType="VisString255" fc="EX" />
-			<DA name="cdcName" bType="VisString255" fc="EX" />
-			<DA name="dataNs" bType="VisString255" fc="EX" />
+			<DA name="setVal" bType="Enum" type="ParallelTransfModeKind" fc="SP"/>
+			<DA name="d" bType="VisString255" fc="DC"/>
+			<DA name="dU" bType="Unicode255" fc="DC"/>
+			<DA name="cdcNs" bType="VisString255" fc="EX"/>
+			<DA name="cdcName" bType="VisString255" fc="EX"/>
+			<DA name="dataNs" bType="VisString255" fc="EX"/>
 		</DOType>
 		<DOType id="ASG_0" cdc="ASG">
-			<DA name="setMag" bType="Struct" type="AnalogueValue_0" fc="SP" />
+			<DA name="setMag" bType="Struct" type="AnalogueValue_0" fc="SP"/>
 		</DOType>
 		<DOType id="ASG_1" cdc="ASG">
-			<DA name="setMag" bType="Struct" type="AnalogueValue_1" fc="SP" />
+			<DA name="setMag" bType="Struct" type="AnalogueValue_1" fc="SP"/>
 		</DOType>
 		<DAType id="OperBool">
-			<BDA name="ctlVal" bType="BOOLEAN" />
-			<BDA name="ctlNum" bType="INT8U" />
-			<BDA name="T" bType="Timestamp" />
-			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="ctlVal" bType="BOOLEAN"/>
+			<BDA name="ctlNum" bType="INT8U"/>
+			<BDA name="T" bType="Timestamp"/>
+			<BDA name="Test" bType="BOOLEAN"/>
 			<!-- <BDA name="Check" bType="Check" type="Check"/> -->
 		</DAType>
 		<DAType id="AnalogueValue_0">
-			<BDA name="i" bType="INT32" />
-			<BDA name="f" bType="FLOAT32" />
+			<BDA name="i" bType="INT32"/>
+			<BDA name="f" bType="FLOAT32"/>
 		</DAType>
 		<DAType id="AnalogueValue_1">
-			<BDA name="i" bType="INT32" />
+			<BDA name="i" bType="INT32"/>
 		</DAType>
 		<DAType id="Originator">
-			<BDA name="orCat" bType="Enum" type="OriginatorCategoryKind" />
-			<BDA name="orIdent" bType="Octet64" />
+			<BDA name="orCat" bType="Enum" type="OriginatorCategoryKind"/>
+			<BDA name="orIdent" bType="Octet64"/>
 		</DAType>
 		<DAType id="OperTcmd">
-			<BDA name="ctlVal" bType="Tcmd" type="Tcmd" />
-			<BDA name="origin" bType="Struct" type="Originator" />
-			<BDA name="ctlNum" bType="INT8U" />
-			<BDA name="T" bType="Timestamp" />
-			<BDA name="Test" bType="BOOLEAN" />
+			<BDA name="ctlVal" bType="Tcmd" type="Tcmd"/>
+			<BDA name="origin" bType="Struct" type="Originator"/>
+			<BDA name="ctlNum" bType="INT8U"/>
+			<BDA name="T" bType="Timestamp"/>
+			<BDA name="Test" bType="BOOLEAN"/>
 			<!-- <BDA name="Check" bType="Check" type="Check"/> -->
 		</DAType>
 		<DAType id="ValWithTrans">
-			<BDA name="posVal" bType="INT8" />
-			<BDA name="transInd" bType="BOOLEAN" />
+			<BDA name="posVal" bType="INT8"/>
+			<BDA name="transInd" bType="BOOLEAN"/>
 		</DAType>
 		<EnumType id="Mod">
 			<EnumVal ord="1">on</EnumVal>
