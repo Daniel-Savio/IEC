@@ -17,14 +17,14 @@
     position: relative;
     border: 4px solid #008242;
     border-radius: 15%;
-    animation: loader 2.5s infinite ease;
+    animation: loader 2s infinite ease;
   }
   .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
     background-color: #03e9768f;
-    animation: loader-inner 2.5s infinite ease-in;
+    animation: loader-inner 2s infinite ease-in;
   }
   
   @keyframes loader {
