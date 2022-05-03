@@ -30,23 +30,24 @@ function sendInfo( info, name )
     FD.append( "info", info)
     FD.append( "name", name)
     
-    // Define what happens on successful data submission
     XHR.addEventListener( 'load', function( event ) {
         loader.style.display = "none";
-        //document.location.reload(true);
+        document.location.reload(true);
     });
   
-    // Define what happens in case of error
     XHR.addEventListener(' error', function( event ) {
       alert( 'Oops! Something went wrong.' );
     });
-    // Set up our request
     XHR.open( 'POST', 'http://localhost/IEC/api/save.php' );
-    // Send our FormData object; HTTP headers are set automatically
     XHR.send( FD );
 }
-//Activating the slected data
+
+
 for (let i = 0; i < spans.length; i++) {
+
+    spans[i].addEventListener("contextmenu", function(){
+        //FAZER ALGO UM DIA
+    })
 
     spans[i].addEventListener("click", function() {
     this.classList.toggle("active-item");
@@ -98,4 +99,4 @@ saveBtns.forEach((saveBtn)=>{
 converter.addEventListener('click', ()=>{
    loader.style.display = "flex";
 })
-    
+sp

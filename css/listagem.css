@@ -1,6 +1,10 @@
 body{
    overflow-y:hidden ;
 }
+.visual{
+    background-image: url("../assets/Wallpaper_Treetech_1920x1080_02_v.02-01.jpg");
+    background-repeat: no-repeat;
+}
 
 #file-list{
     display: flex;
@@ -89,6 +93,10 @@ body{
 
 }
 
+#visual{
+    background-image: url("../assets/Wallpaper_Treetech_1920x1080_02_v.02-01.jpg");
+}
+
 .visual{
     display: flex;
     flex-direction: row;
@@ -103,6 +111,8 @@ body{
     transition: all 0.3s ease 0s;
     overflow-y: scroll;
     overflow-x: auto;
+    background-image: url("../assets/Wallpaper_Treetech_1920x1080_02_v.02-01.jpg");
+    
 
 }
 .visual-full{

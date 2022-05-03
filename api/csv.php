@@ -41,7 +41,7 @@ class CSV {
     {
         $row = 1;
         $data = [];
-        while(($value = fgetcsv($this->csv, 1000, ";")) !== FALSE){
+        while(($value = fgetcsv($this->csv, 10000, ";")) !== FALSE){
             $columns = count($value);
             $row++;
             for($c=0; $c < $columns; $c++){

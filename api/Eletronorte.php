@@ -18,11 +18,12 @@ if(isset($_POST['csv']) && isset($_POST['xml']) )
     $xml = new XML();
     $file = new Files();
 
-    //var_dump($csv->getData());
-
+    // var_dump($csv->getData());
+    // die;
+   
+    $xml->toEletronorte($xmlPath, $csv->getData(), $newName);
 
     $file->setXml($newName, "./ext/{$newName}");
-    $xml->toEletronorte($xmlPath, $csv->getData(), $newName);
     header("Location: http://localhost/IEC/listagem.php");
 
 }

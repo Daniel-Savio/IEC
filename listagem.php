@@ -135,7 +135,12 @@ $file = new Files();
 
         </aside>
 
-        <section class="visual">
+        <div class="filter">
+            
+        </div>
+
+
+        <section class="visual" id="visual">
             <?php
             foreach ($file->fetchXml() as  $data) {
                 $xml = new XML($data['xml_file_path']);

@@ -4,7 +4,7 @@ const submit = document.querySelector(".upload_btn");
 const xmlAdded = document.querySelector("#xmlAdded");
 const csvAdded = document.querySelector("#csvAdded");
 
-const validTypes = ['text/xml', 'application/vnd.ms-excel']
+const validTypes = ['text/xml', 'text/csv']
 
 
 let filesXML=[];
@@ -81,9 +81,9 @@ csvArea.addEventListener("drop", (evt)=>{
         span.innerText = file.name;
         csvAdded.appendChild(span);
         
-
+        console.log(type);
         if(type !== validTypes[1]){
-            alert(file.name + " - Não é permitido nesse campo. Confira a extensão do arquivo e as permissões deste campo");
+            alert(file.name + " - Não é permitido nesse campo. Confira a extensão do arquivo e as permissões deste campo" + type);
             document.location.reload(true);
             return;
         }

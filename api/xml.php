@@ -33,7 +33,7 @@ class XML
                     $data[$row][2] = $class1["inst"];
                     $data[$row][3] = $value["name"];
                     $data[$row][4] = $value->{'DAI'}->{'Val'};
-                    //$data[$row][5] = $data[$row][1] . $data[$row][2] . $data[$row][3];
+                    //$data[$row][5] = $data[$row][0] . "_" . $data[$row][1] . $data[$row][2] . $data[$row][3];
                     $row++;
                 }
             }
@@ -42,7 +42,7 @@ class XML
         return $data;
     }
 
-    public function toEletronorte($url ,$csv, $name)
+    public function toEletronorte($url, $csv, $name)
     {
         $xml = simplexml_load_file($url);
         $data = [];
@@ -59,13 +59,13 @@ class XML
                     $data[$row][2] = $class1["inst"];
                     $data[$row][3] = $value["name"];
                     $data[$row][4] = $value->{'DAI'}->{'Val'};
-                    $data[$row][5] = $data[$row][1] . $data[$row][2] . $data[$row][3];
+                    $data[$row][5] = $data[$row][0] . "_" . $data[$row][1] . $data[$row][2] . $data[$row][3];
 
                     for ($i = 3; $i < count($csv); $i++) {
                         for ($j = 0; $j <=4 ; $j++) {
-                            $idCSV = $csv[$i][0] . $csv[$i][1] . $csv[$i][2];
+                            $idCSV = $csv[$i][0] . $csv[$i][1] . $csv[$i][2] . $csv[$i][3];
                             if ($idCSV ==  $data[$row][5]) {
-                                $value->{'DAI'}->{'Val'} = $csv[$i][4];
+                                $value->{'DAI'}->{'Val'} = $csv[$i][5];
                                 $xml->asXML("../ext/{$name}");
                             }
                         }
@@ -75,6 +75,8 @@ class XML
                 $row++;
             }
         }
+           
+       
     }
     public function save($url, $array, $name)
     {
@@ -94,20 +96,20 @@ class XML
                     $data[$row][3] = $value["name"];
                     $data[$row][4] = $value->{'DAI'}->{'Val'};
                     $data[$row][5] = $data[$row][1] . $data[$row][2] . $data[$row][3];
-                   
+
 
                     for ($i = 0; $i < count($array); $i++) {
-                        for ($j = 0; $j <=4 ; $j++) {
+                        for ($j = 0; $j <= 4; $j++) {
                             $idArray = $array[$i][1] . $array[$i][2] . $array[$i][3];
-    
+
                             if ($idArray ==  $data[$row][5]) {
-                                echo  "ID XML = ".$data[$row][5]. " </br> ------ </br> ID array = " . $idArray . " => {$array[$i][4]}" ."</br>";
+                                echo  "ID XML = " . $data[$row][5] . " </br> ------ </br> ID array = " . $idArray . " => {$array[$i][4]}" . "</br>";
                                 $value->{'DAI'}->{'Val'} = $array[$i][4];
-                                $xml->asXML("../ext/{$name}");
+                                
                             }
                         }
-                        
                     }
+                    $xml->asXML("../ext/{$name}");
                 }
                 $row++;
             }
